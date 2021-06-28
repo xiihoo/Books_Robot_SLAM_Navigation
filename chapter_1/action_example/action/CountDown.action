@@ -1,0 +1,10 @@
+#goal define
+int32 target_number
+int32 target_step
+---
+#result define
+bool finish
+---
+#feedback define
+float32 count_percent
+int32 count_current
