@@ -47,6 +47,12 @@
   + CNN_SLAM
   + DeepVO
 * chapter_11:
+* chapter_12:
+  + ros-navigation
+  + riskrrt
+  + autoware
+* chapter_13:
+  + patrol_fsm
 
 
 
@@ -104,3 +110,10 @@
   + CNN_SLAM 基于CNN的SLAM系统
   + DeepVO 基于深度学习的端到端SLAM系统
 * chapter_11: **自主导航中的数学基础**
+* chapter_12: **典型自主导航系统**
+  + ros-navigation 
+  + riskrrt
+  + autoware
+* chapter_13: **机器人SLAM导航综合实战**
+  + patrol_fsm 多目标点巡逻
+
