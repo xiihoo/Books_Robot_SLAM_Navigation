@@ -25,7 +25,31 @@
   + calc_hist
   + xfeatures2d_example
 * chapter_4:
-  + 啊啊啊
+  + imu_tk
+  + imu_utils
+  + imu_tools
+  + ManhonyAHRS
+* chapter_5:
+* chapter_6:
+* chapter_7:
+* chapter_8:
+  + gmapping
+  + cartographer
+  + loam
+* chapter_9:
+  + orb_slam2
+  + lsd_slam
+  + svo
+* chapter_10:
+  + rtabmap
+  + vins
+  + LeNet-5-tensorflow
+  + CNN_SLAM
+  + DeepVO
+* chapter_11:
+
+
+
 
 <br/></br>
 <br/></br>
@@ -58,4 +82,25 @@
   + calc_hist 直方图均衡
   + xfeatures2d_example 图像特征点提取
 * chapter_4: **机器人传感器**
-  + 啊啊啊
+  + imu_tk IMU内参标定
+  + imu_utils IMU内参标定
+  + imu_tools Madgwick姿态融合 
+  + ManhonyAHRS Manhony姿态融合
+* chapter_5: **机器人主机**
+* chapter_6: **机器人底盘**
+* chapter_7: **SLAM中的数学基础**
+* chapter_8: **激光SLAM系统**
+  + gmapping gmapping激光SLAM系统
+  + cartographer cartographer激光SLAM系统
+  + loam LOAM激光SLAM系统
+* chapter_9: **视觉SLAM系统**
+  + orb_slam2 ORB_SLAM2视觉SLAM系统
+  + lsd_slam LSD_SLAM视觉SLAM系统
+  + svo SVO视觉SLAM系统
+* chapter_10: **其他SLAM系统**
+  + rtabmap rtabmap激光视觉融合SLAM系统
+  + vins VINS视觉惯导融合SLAM系统
+  + LeNet-5-tensorflow LeNet-5卷积神经网络
+  + CNN_SLAM 基于CNN的SLAM系统
+  + DeepVO 基于深度学习的端到端SLAM系统
+* chapter_11: **自主导航中的数学基础**
