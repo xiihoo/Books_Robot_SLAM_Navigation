@@ -1,72 +1,12 @@
-[EN]
-
-# Books_Robot_SLAM_Navigation
-## About
-* Author :  xiihoo
-* Website:  www.xiihoo.com
-* E-mail :  robot4xiihoo@163.com
-* Github :  https://github.com/xiihoo/Books_Robot_SLAM_Navigation
-## Environment request
-* ubuntu 18.04 LTS
-* ROS melodic
-## Package introduction
-* chapter_1:
-  + topic_example
-  + service_example
-  + action_example
-* chapter_2:
-  + g++_compile
-  + make_compile
-  + cmake_compile
-* chapter_3:
-  + image_from_img
-  + image_from_vid
-  + image_from_cam
-  + calc_hist
-  + xfeatures2d_example
-* chapter_4:
-  + imu_tk
-  + imu_utils
-  + imu_tools
-  + ManhonyAHRS
-* chapter_5:
-* chapter_6:
-* chapter_7:
-* chapter_8:
-  + gmapping
-  + cartographer
-  + loam
-* chapter_9:
-  + orb_slam2
-  + lsd_slam
-  + svo
-* chapter_10:
-  + rtabmap
-  + vins
-  + LeNet-5-tensorflow
-  + CNN_SLAM
-  + DeepVO
-* chapter_11:
-* chapter_12:
-  + ros-navigation
-  + riskrrt
-  + autoware
-* chapter_13:
-  + patrol_fsm
-
-
-
-
-<br/></br>
-<br/></br>
-<br/></br>
-
-[CN]
-
-# 《机器人SLAM导航核心技术与实战》张虎 著 （随书配套源码）
+# 《机器人SLAM导航核心技术与实战》张虎 著 （随书配套源码+PPT课件+课后习题答案）
+![avatar](BOOK1.jpg)
+![avatar](BOOK2.PNG)
 ## 关于
-* 作者:  xiihoo
-* 官网:  www.xiihoo.com
+* 作者: （英文名）xiihoo
+        （中文名）张虎
+        （网名）  小虎哥哥爱学习
+* 官网:  http://www.xiihoo.com
+* QQ群： 728661815
 * 邮箱:  robot4xiihoo@163.com
 * 源码:  https://github.com/xiihoo/Books_Robot_SLAM_Navigation
 ## 环境要求
@@ -117,3 +57,11 @@
 * chapter_13: **机器人SLAM导航综合实战**
   + patrol_fsm 多目标点巡逻
 
+## PPT课件
+* 正在更新...
+
+## 课后习题答案
+* 正在更新...
+
+## 视频教程
+* 正在更新...
