@@ -1,6 +1,7 @@
 # 《机器人SLAM导航核心技术与实战》张虎 著 （随书配套源码+PPT课件+课后习题答案）
 ![avatar](BOOK1.jpg)
 ![avatar](BOOK2.PNG)
+![avatar](http://xiihoo.com/static/image/book_front_800x800.jpg)
 ## 关于
 * 作者: （英文名）xiihoo
         （中文名）张虎
