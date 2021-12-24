@@ -232,6 +232,7 @@
 * QQ群： 728661815
 * 邮箱:  robot4xiihoo@163.com
 * 源码:  https://github.com/xiihoo/Books_Robot_SLAM_Navigation
+* 购书链接：https://m.tb.cn/h.fRbnEUp
 ## 环境要求
 * ubuntu 18.04 LTS
 * ROS melodic
