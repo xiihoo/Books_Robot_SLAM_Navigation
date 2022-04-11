@@ -282,10 +282,15 @@
   + patrol_fsm 多目标点巡逻
 
 ## PPT课件
+* 知乎：https://www.zhihu.com/people/hiram_zhang
 * 正在更新...
 
 ## 课后习题答案
-* 正在更新...
+* 更多精彩内容，正在更新...
 
 ## 视频教程
-* 正在更新...
+* B站：https://space.bilibili.com/66815220
+* <a href="https://www.bilibili.com/video/BV1SR4y1M74V">一本书打通机器人SLAM导航中的软件技术、硬件技术、数学理论、工程落地等一系列问题-视频解读</a>
+* <a href="https://www.bilibili.com/video/BV1tq4y1Y7C3">《机器人SLAM导航核心技术与实战》前言部分-视频解读</a>
+* <a href="https://www.bilibili.com/video/BV1PZ4y1U7P2">机器人SLAM导航书内容导读与学习方法-视频解读</a>
+* 更多精彩内容，正在更新...
