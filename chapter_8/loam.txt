@@ -1,3 +1,0 @@
-https://github.com/laboshinl/loam_velodyne
-https://github.com/HKUST-Aerial-Robotics/A-LOAM
-https://github.com/RobustFieldAutonomyLab/LeGO-LOAM

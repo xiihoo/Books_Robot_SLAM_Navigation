@@ -1,0 +1,3 @@
+https://github.com/cartographer-project/cartographer_ros
+https://github.com/cartographer-project/cartographer
+https://github.com/ceres-solver/ceres-solver

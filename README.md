@@ -225,6 +225,27 @@
   + 13.5 本章小结 511
 * 附录A Linux与SLAM性能优化的探讨 512
 * 附录B 习题 523
+## 学习思维导图
+<div style="text-align: center">
+        <h4>（学习思维导图）机器人SLAM导航核心技术与实战</h4>
+		<video id="video" height="474px" width="850px" controls muted autoplay loop >
+              <source src="http://www.xiihoo.com/static/video/learn_xmind.mp4" type="video/mp4">
+        </video>
+        <div style="overflow: hidden; margin-top: 10px; margin-bottom: 10px; margin-left: 200px; margin-right: 200px;">
+            <div style="float: left;height: 65px;padding-top: 15px;">
+            	<a href="http://xiihoo.com/static/file/%E5%AD%A6%E4%B9%A0%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE.png" download="学习思维导图.png" target="_blank"><img src="http://www.xiihoo.com/static/image/download_logo_30x30.png" /></a>
+            </div>
+            <div style="float: left;height: 65px;">
+                <a href="http://xiihoo.com/static/file/%E5%AD%A6%E4%B9%A0%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE.png" download="学习思维导图.png" target="_blank"><h4>下载高清原图</h4></a>
+            </div>
+            <div style="float: right;height: 65px;">
+            	<a href="http://xiihoo.com/static/file/%E5%AD%A6%E4%B9%A0%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE.xmind" target="_blank"><h4>下载思维导图</h4></a>
+            </div>
+            <div style="float: right;height: 65px;padding-top: 15px;">
+            	<a href="http://xiihoo.com/static/file/%E5%AD%A6%E4%B9%A0%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE.xmind" target="_blank"><img src="http://www.xiihoo.com/static/image/download_logo_30x30.png" /></a>
+            </div>
+        </div>
+    </div>
 
 ## 关于
 * 作者: （英文名）xiihoo（中文名）张虎（网名）  小虎哥哥爱学习
@@ -236,61 +257,77 @@
 ## 环境要求
 * ubuntu 18.04 LTS
 * ROS melodic
-## 源码包介绍
-* chapter_1: **ROS入门必备知识**
-  + topic_example 话题通信
-  + service_example 服务通信
-  + action_example 动作通信
-* chapter_2: **C++编程范式**
-  + g++_compile 利用g++编译
-  + make_compile 利用make编译
-  + cmake_compile 利用cmake编译
-* chapter_3: **OpenCV图像处理**
-  + image_from_img 从图片文件中获取图像数据
-  + image_from_vid 从视频文件中获取图像数据
-  + image_from_cam 从相机设备中获取图像数据
-  + calc_hist 直方图均衡
-  + xfeatures2d_example 图像特征点提取
-* chapter_4: **机器人传感器**
-  + imu_tk IMU内参标定
-  + imu_utils IMU内参标定
-  + imu_tools Madgwick姿态融合 
-  + ManhonyAHRS Manhony姿态融合
-* chapter_5: **机器人主机**
-* chapter_6: **机器人底盘**
-* chapter_7: **SLAM中的数学基础**
-* chapter_8: **激光SLAM系统**
-  + gmapping gmapping激光SLAM系统
-  + cartographer cartographer激光SLAM系统
-  + loam LOAM激光SLAM系统
-* chapter_9: **视觉SLAM系统**
-  + orb_slam2 ORB_SLAM2视觉SLAM系统
-  + lsd_slam LSD_SLAM视觉SLAM系统
-  + svo SVO视觉SLAM系统
-* chapter_10: **其他SLAM系统**
-  + rtabmap rtabmap激光视觉融合SLAM系统
-  + vins VINS视觉惯导融合SLAM系统
-  + LeNet-5-tensorflow LeNet-5卷积神经网络
-  + CNN_SLAM 基于CNN的SLAM系统
-  + DeepVO 基于深度学习的端到端SLAM系统
-* chapter_11: **自主导航中的数学基础**
-* chapter_12: **典型自主导航系统**
-  + ros-navigation 
-  + riskrrt
-  + autoware
-* chapter_13: **机器人SLAM导航综合实战**
-  + patrol_fsm 多目标点巡逻
 
-## PPT课件
+## 仓库内容说明
+* **1.例程源码**
+  + chapter_01: **ROS入门必备知识**
+    - topic_example 话题通信
+    - service_example 服务通信
+    - action_example 动作通信
+  + chapter_02: **C++编程范式**
+    - g++_compile 利用g++编译
+    - make_compile 利用make编译
+    - cmake_compile 利用cmake编译
+  + chapter_03: **OpenCV图像处理**
+    - image_from_img 从图片文件中获取图像数据
+    - image_from_vid 从视频文件中获取图像数据
+    - image_from_cam 从相机设备中获取图像数据
+    - calc_hist 直方图均衡
+    - xfeatures2d_example 图像特征点提取
+  + chapter_04: **机器人传感器**
+    - imu_tk IMU内参标定
+    - imu_utils IMU内参标定
+    - imu_tools Madgwick姿态融合 
+    - ManhonyAHRS Manhony姿态融合
+  + chapter_05: **机器人主机**
+  + chapter_06: **机器人底盘**
+  + chapter_07: **SLAM中的数学基础**
+  + chapter_08: **激光SLAM系统**
+    - gmapping gmapping激光SLAM系统
+    - cartographer cartographer激光SLAM系统
+    - loam LOAM激光SLAM系统
+  + chapter_09: **视觉SLAM系统**
+    - orb_slam2 ORB_SLAM2视觉SLAM系统
+    - lsd_slam LSD_SLAM视觉SLAM系统
+    - svo SVO视觉SLAM系统
+  + chapter_10: **其他SLAM系统**
+    - rtabmap rtabmap激光视觉融合SLAM系统
+    - vins VINS视觉惯导融合SLAM系统
+    - LeNet-5-tensorflow LeNet-5卷积神经网络
+    - CNN_SLAM 基于CNN的SLAM系统
+    - DeepVO 基于深度学习的端到端SLAM系统
+  + chapter_11: **自主导航中的数学基础**
+  + chapter_12: **典型自主导航系统**
+    - ros-navigation 
+    - riskrrt
+    - autoware
+  + chapter_13: **机器人SLAM导航综合实战**
+    - patrol_fsm 多目标点巡逻
+  + 更新中......
+* **2.课件PPT**
+  + 0-先导课：课程大纲.pdf
+  + 0-先导课：课程大纲.pptx
+  + 更新中......
+* **3.习题答案**
+  + 附录B_习题.pdf
+  + 更新中......
+* **4.学习思维导图**
+  + 学习思维导图.png
+  + 学习思维导图.xmind
+  + learn_xmind.mp4
+
+## 知乎专栏教程
 * 知乎：https://www.zhihu.com/people/hiram_zhang
-* 正在更新...
-
-## 课后习题答案
-* 更多精彩内容，正在更新...
+* 知乎专栏：
+  + 《机器人SLAM导航核心技术与实战》笔记
+    https://www.zhihu.com/column/c_1363309952996577280
+  + 自己动手做一台SLAM导航机器人
+    https://www.zhihu.com/column/c_1084087088789569536
 
 ## 视频教程
 * B站：https://space.bilibili.com/66815220
-* <a href="https://www.bilibili.com/video/BV1SR4y1M74V">一本书打通机器人SLAM导航中的软件技术、硬件技术、数学理论、工程落地等一系列问题-视频解读</a>
-* <a href="https://www.bilibili.com/video/BV1tq4y1Y7C3">《机器人SLAM导航核心技术与实战》前言部分-视频解读</a>
-* <a href="https://www.bilibili.com/video/BV1PZ4y1U7P2">机器人SLAM导航书内容导读与学习方法-视频解读</a>
-* 更多精彩内容，正在更新...
+* 视频列表：
+  + <a href="https://www.bilibili.com/video/BV1SR4y1M74V">一本书打通机器人SLAM导航中的软件技术、硬件技术、数学理论、工程落地等一系列问题-视频解读</a>
+  + <a href="https://www.bilibili.com/video/BV1tq4y1Y7C3">《机器人SLAM导航核心技术与实战》前言部分-视频解读</a>
+  + <a href="https://www.bilibili.com/video/BV1PZ4y1U7P2">机器人SLAM导航书内容导读与学习方法-视频解读</a>
+  + 更多精彩内容，正在更新...

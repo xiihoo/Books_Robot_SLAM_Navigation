@@ -1,2 +1,0 @@
-https://github.com/raulmur/ORB_SLAM2
-https://github.com/UZ-SLAMLab/ORB_SLAM3

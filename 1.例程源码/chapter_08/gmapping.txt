@@ -1,0 +1,2 @@
+https://github.com/ros-perception/slam_gmapping
+https://github.com/ros-perception/openslam_gmapping
