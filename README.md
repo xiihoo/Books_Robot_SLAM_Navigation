@@ -250,7 +250,9 @@
 ## 关于
 * 作者: （英文名）xiihoo（中文名）张虎（网名）  小虎哥哥爱学习
 * 官网:  http://www.xiihoo.com
-* QQ群： 728661815
+* QQ群： 
+  + QQ技术1群：728661815（1群已满，请加2群）
+  + QQ技术2群：117698356
 * 邮箱:  robot4xiihoo@163.com
 * 源码:  https://github.com/xiihoo/Books_Robot_SLAM_Navigation
 * 购书链接：https://item.jd.com/13041503.html
