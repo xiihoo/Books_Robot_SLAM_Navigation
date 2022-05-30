@@ -87,6 +87,7 @@
 * **2.课件PPT**
   + 0-先导课：课程大纲.pdf
   + 0-先导课：如何安装Ubuntu系统.pdf
+  + 0-先导课：SLAM的应用价值与技术难点.pdf
   + 更新中......
 * **3.习题答案**
   + 附录B_习题.pdf
@@ -121,4 +122,8 @@
   + <a href="https://www.bilibili.com/video/BV1jS4y1a7Lz?p=13">【先导课】2.7.如何安装Ubuntu系统-虚拟机安装Ubuntu（VMware方法）-视频讲解</a>
   + <a href="https://www.bilibili.com/video/BV1jS4y1a7Lz?p=14">【先导课】2.8.如何安装Ubuntu系统-虚拟机安装Ubuntu（virtualbox方法）-视频讲解</a>
   + <a href="https://www.bilibili.com/video/BV1jS4y1a7Lz?p=15">【先导课】2.9.如何安装Ubuntu系统-Ubuntu系统基础入门-视频讲解</a>
+  + <a href="https://www.bilibili.com/video/BV1jS4y1a7Lz?p=16">【先导课】3.SLAM的应用价值与技术难点-视频讲解</a>
+  + <a href="https://www.bilibili.com/video/BV1jS4y1a7Lz?p=17">【先导课】3.1.SLAM的应用价值与技术难点-SLAM价值-视频讲解</a>
+  + <a href="https://www.bilibili.com/video/BV1jS4y1a7Lz?p=18">【先导课】3.2.SLAM的应用价值与技术难点-产业应用与生态-视频讲解</a>
+  + <a href="https://www.bilibili.com/video/BV1jS4y1a7Lz?p=19">【先导课】3.3.SLAM的应用价值与技术难点-核心技术与难点-视频讲解</a>
   + 更多精彩内容，正在更新...
