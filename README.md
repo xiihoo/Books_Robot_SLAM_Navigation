@@ -88,6 +88,7 @@
   + 0-先导课：课程大纲.pdf
   + 0-先导课：如何安装Ubuntu系统.pdf
   + 0-先导课：SLAM的应用价值与技术难点.pdf
+  + 1-第1季：第0章_SLAM发展综述.pdf
   + 更新中......
 * **3.习题答案**
   + 附录B_习题.pdf
@@ -126,4 +127,8 @@
   + <a href="https://www.bilibili.com/video/BV1jS4y1a7Lz?p=17">【先导课】3.1.SLAM的应用价值与技术难点-SLAM价值-视频讲解</a>
   + <a href="https://www.bilibili.com/video/BV1jS4y1a7Lz?p=18">【先导课】3.2.SLAM的应用价值与技术难点-产业应用与生态-视频讲解</a>
   + <a href="https://www.bilibili.com/video/BV1jS4y1a7Lz?p=19">【先导课】3.3.SLAM的应用价值与技术难点-核心技术与难点-视频讲解</a>
+  + <a href="https://www.bilibili.com/video/BV1jS4y1a7Lz?p=20">【第1季】0.第0章_SLAM发展综述-视频讲解</a>
+  + <a href="https://www.bilibili.com/video/BV1jS4y1a7Lz?p=21">【第1季】0.1.第0章_SLAM发展综述-梳理定位导航技术-视频讲解</a>
+  + <a href="https://www.bilibili.com/video/BV1jS4y1a7Lz?p=22">【第1季】0.2.第0章_SLAM发展综述-揭秘SLAM技术路线-视频讲解</a>
+  + <a href="https://www.bilibili.com/video/BV1jS4y1a7Lz?p=23">【第1季】0.3.第0章_SLAM发展综述-展望SLAM未来趋势-视频讲解</a>
   + 更多精彩内容，正在更新...
