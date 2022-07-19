@@ -89,6 +89,7 @@
   + 0-先导课：如何安装Ubuntu系统.pdf
   + 0-先导课：SLAM的应用价值与技术难点.pdf
   + 1-第1季：第0章_SLAM发展综述.pdf
+  + 1-第1季：第1章_ROS入门必备知识.pdf
   + 更新中......
 * **3.习题答案**
   + 附录B_习题.pdf
@@ -131,4 +132,12 @@
   + <a href="https://www.bilibili.com/video/BV1jS4y1a7Lz?p=21">【第1季】0.1.第0章_SLAM发展综述-梳理定位导航技术-视频讲解</a>
   + <a href="https://www.bilibili.com/video/BV1jS4y1a7Lz?p=22">【第1季】0.2.第0章_SLAM发展综述-揭秘SLAM技术路线-视频讲解</a>
   + <a href="https://www.bilibili.com/video/BV1jS4y1a7Lz?p=23">【第1季】0.3.第0章_SLAM发展综述-展望SLAM未来趋势-视频讲解</a>
+  + <a href="https://www.bilibili.com/video/BV1jS4y1a7Lz?p=24">【第1季】1.第1章_ROS入门必备知识-视频讲解</a>
+  + <a href="https://www.bilibili.com/video/BV1jS4y1a7Lz?p=25">【第1季】1.1.第1章_ROS入门必备知识-ROS简介-视频讲解</a>
+  + <a href="https://www.bilibili.com/video/BV1jS4y1a7Lz?p=26">【第1季】1.2.第1章_ROS入门必备知识-ROS开发环境搭建-视频讲解</a>
+  + <a href="https://www.bilibili.com/video/BV1jS4y1a7Lz?p=27">【第1季】1.3.第1章_ROS入门必备知识-ROS系统架构-视频讲解</a>
+  + <a href="https://www.bilibili.com/video/BV1jS4y1a7Lz?p=28">【第1季】1.4.第1章_ROS入门必备知识-ROS调试工具-视频讲解</a>
+  + <a href="https://www.bilibili.com/video/BV1jS4y1a7Lz?p=29">【第1季】1.5.第1章_ROS入门必备知识-ROS节点通信-视频讲解</a>
+  + <a href="https://www.bilibili.com/video/BV1jS4y1a7Lz?p=30">【第1季】1.6.第1章_ROS入门必备知识-ROS其他重要概念-视频讲解</a>
+  + <a href="https://www.bilibili.com/video/BV1jS4y1a7Lz?p=31">【第1季】1.7.第1章_ROS入门必备知识-ROS2.0展望-视频讲解</a>
   + 更多精彩内容，正在更新...
