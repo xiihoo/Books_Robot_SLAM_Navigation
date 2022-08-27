@@ -90,6 +90,7 @@
   + 0-先导课：SLAM的应用价值与技术难点.pdf
   + 1-第1季：第0章_SLAM发展综述.pdf
   + 1-第1季：第1章_ROS入门必备知识.pdf
+  + 1-第1季：第2章_C++编程范式.pdf
   + 更新中......
 * **3.习题答案**
   + 附录B_习题.pdf
@@ -140,4 +141,8 @@
   + <a href="https://www.bilibili.com/video/BV1jS4y1a7Lz?p=29">【第1季】1.5.第1章_ROS入门必备知识-ROS节点通信-视频讲解</a>
   + <a href="https://www.bilibili.com/video/BV1jS4y1a7Lz?p=30">【第1季】1.6.第1章_ROS入门必备知识-ROS其他重要概念-视频讲解</a>
   + <a href="https://www.bilibili.com/video/BV1jS4y1a7Lz?p=31">【第1季】1.7.第1章_ROS入门必备知识-ROS2.0展望-视频讲解</a>
+  + <a href="https://www.bilibili.com/video/BV1jS4y1a7Lz?p=32">【第1季】2.第2章_C++编程范式-视频讲解</a>
+  + <a href="https://www.bilibili.com/video/BV1jS4y1a7Lz?p=33">【第1季】2.1.第2章_C++编程范式-C++工程的组织结构-视频讲解</a>
+  + <a href="https://www.bilibili.com/video/BV1jS4y1a7Lz?p=34">【第1季】2.2.第2章_C++编程范式-C++代码的编译方法-视频讲解</a>
+  + <a href="https://www.bilibili.com/video/BV1jS4y1a7Lz?p=35">【第1季】2.3.第2章_C++编程范式-C++编程风格指南-视频讲解</a>
   + 更多精彩内容，正在更新...
