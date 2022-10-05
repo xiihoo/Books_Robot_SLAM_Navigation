@@ -54,6 +54,7 @@
     - image_from_cam 从相机设备中获取图像数据
     - calc_hist 直方图均衡
     - xfeatures2d_example 图像特征点提取
+    - ikun_opencv_example 图像处理综合实战案例
   + chapter_04: **机器人传感器**
     - imu_tk IMU内参标定
     - imu_utils IMU内参标定
@@ -145,4 +146,10 @@
   + <a href="https://www.bilibili.com/video/BV1jS4y1a7Lz?p=33">【第1季】2.1.第2章_C++编程范式-C++工程的组织结构-视频讲解</a>
   + <a href="https://www.bilibili.com/video/BV1jS4y1a7Lz?p=34">【第1季】2.2.第2章_C++编程范式-C++代码的编译方法-视频讲解</a>
   + <a href="https://www.bilibili.com/video/BV1jS4y1a7Lz?p=35">【第1季】2.3.第2章_C++编程范式-C++编程风格指南-视频讲解</a>
+  + <a href="https://www.bilibili.com/video/BV1jS4y1a7Lz?p=36">【第1季】3.第3章_OpenCV图像处理-视频讲解</a>
+  + <a href="https://www.bilibili.com/video/BV1jS4y1a7Lz?p=37">【第1季】3.1.第3章_OpenCV图像处理_认识图像数据-视频讲解</a>
+  + <a href="https://www.bilibili.com/video/BV1jS4y1a7Lz?p=38">【第1季】3.2.第3章_OpenCV图像处理_图像滤波-视频讲解</a>
+  + <a href="https://www.bilibili.com/video/BV1jS4y1a7Lz?p=39">【第1季】3.3.第3章_OpenCV图像处理_图像变换-视频讲解</a>
+  + <a href="https://www.bilibili.com/video/BV1jS4y1a7Lz?p=40">【第1季】3.4.第3章_OpenCV图像处理_图像特征点提取-视频讲解</a>
+  + <a href="https://www.bilibili.com/video/BV1jS4y1a7Lz?p=41">【第1季】3.5.第3章_OpenCV图像处理_拓展-视频讲解</a>
   + 更多精彩内容，正在更新...
