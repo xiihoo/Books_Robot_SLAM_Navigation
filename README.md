@@ -93,6 +93,7 @@
   + 1-第1季：第1章_ROS入门必备知识.pdf
   + 1-第1季：第2章_C++编程范式.pdf
   + 1-第1季：第3章_OpenCV图像处理.pdf
+  + 1-第1季：第4章_机器人传感器.pdf
   + 更新中......
 * **3.习题答案**
   + 附录B_习题.pdf
@@ -153,4 +154,9 @@
   + <a href="https://www.bilibili.com/video/BV1jS4y1a7Lz?p=39">【第1季】3.3.第3章_OpenCV图像处理_图像变换-视频讲解</a>
   + <a href="https://www.bilibili.com/video/BV1jS4y1a7Lz?p=40">【第1季】3.4.第3章_OpenCV图像处理_图像特征点提取-视频讲解</a>
   + <a href="https://www.bilibili.com/video/BV1jS4y1a7Lz?p=41">【第1季】3.5.第3章_OpenCV图像处理_拓展-视频讲解</a>
+  + <a href="https://www.bilibili.com/video/BV1jS4y1a7Lz?p=42">【第1季】4.第4章_机器人传感器-视频讲解</a>
+  + <a href="https://www.bilibili.com/video/BV1jS4y1a7Lz?p=43">【第1季】4.1.第4章_机器人传感器_惯性测量单元-视频讲解</a>
+  + <a href="https://www.bilibili.com/video/BV1jS4y1a7Lz?p=44">【第1季】4.2.第4章_机器人传感器_激光雷达-视频讲解</a>
+  + <a href="https://www.bilibili.com/video/BV1jS4y1a7Lz?p=45">【第1季】4.3.第4章_机器人传感器_相机-视频讲解</a>
+  + <a href="https://www.bilibili.com/video/BV1jS4y1a7Lz?p=46">【第1季】4.4.第4章_机器人传感器_带编码器的减速电机-视频讲解</a>
   + 更多精彩内容，正在更新...
