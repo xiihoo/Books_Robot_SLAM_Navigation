@@ -10,7 +10,9 @@
 * 邮箱:  robot4xiihoo@163.com
 * 源码:  https://github.com/xiihoo/Books_Robot_SLAM_Navigation
 * 购书链接：https://item.jd.com/13041503.html
-
+## 资料汇总下载
+* 百度网盘链接： https://pan.baidu.com/s/1nHbI0mi-iM72NAcQlAU1uQ?pwd=1234
+* 提取码：1234
 ## 图书封面
 ![avatar](http://xiihoo.com/static/image/book_front_800x800.jpg)
 ## 目录
@@ -96,6 +98,7 @@
   + 1-第1季：第2章_C++编程范式.pdf
   + 1-第1季：第3章_OpenCV图像处理.pdf
   + 1-第1季：第4章_机器人传感器.pdf
+  + 1-第1季：第5章_机器人主机.pdf
   + 更新中......
 * **3.习题答案**
   + 附录B_习题.pdf
@@ -161,4 +164,10 @@
   + <a href="https://www.bilibili.com/video/BV1jS4y1a7Lz?p=44">【第1季】4.2.第4章_机器人传感器_激光雷达-视频讲解</a>
   + <a href="https://www.bilibili.com/video/BV1jS4y1a7Lz?p=45">【第1季】4.3.第4章_机器人传感器_相机-视频讲解</a>
   + <a href="https://www.bilibili.com/video/BV1jS4y1a7Lz?p=46">【第1季】4.4.第4章_机器人传感器_带编码器的减速电机-视频讲解</a>
+  + <a href="https://www.bilibili.com/video/BV1jS4y1a7Lz?p=47">【第1季】5.第5章_机器人主机-视频讲解</a>
+  + <a href="https://www.bilibili.com/video/BV1jS4y1a7Lz?p=48">【第1季】5.1.第5章_机器人主机_X86与ARM主机对比-视频讲解</a>
+  + <a href="https://www.bilibili.com/video/BV1jS4y1a7Lz?p=49">【第1季】5.2.第5章_机器人主机_ARM主机树莓派3B+-视频讲解</a>
+  + <a href="https://www.bilibili.com/video/BV1jS4y1a7Lz?p=50">【第1季】5.3.第5章_机器人主机_ARM主机RK3399-视频讲解</a>
+  + <a href="https://www.bilibili.com/video/BV1jS4y1a7Lz?p=51">【第1季】5.4.第5章_机器人主机_ARM主机Jetson-tx2-视频讲解</a>
+  + <a href="https://www.bilibili.com/video/BV1jS4y1a7Lz?p=52">【第1季】5.5.第5章_机器人主机_分布式架构主机-视频讲解</a>
   + 更多精彩内容，正在更新...
