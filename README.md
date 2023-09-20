@@ -6,7 +6,7 @@
 * 官网:  http://www.xiihoo.com
 * QQ群： 
   + QQ技术1群：728661815（1群已满，请加3群）
-  + QQ技术2群：117698356（1群已满，请加3群）
+  + QQ技术2群：117698356（2群已满，请加3群）
   + QQ技术3群：891252940
 * 邮箱:  robot4xiihoo@163.com
 * 源码:  https://github.com/xiihoo/Books_Robot_SLAM_Navigation
