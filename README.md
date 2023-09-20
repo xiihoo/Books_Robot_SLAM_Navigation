@@ -5,8 +5,9 @@
 * 作者: （英文名）xiihoo（中文名）张虎（网名）  小虎哥哥爱学习
 * 官网:  http://www.xiihoo.com
 * QQ群： 
-  + QQ技术1群：728661815（1群已满，请加2群）
-  + QQ技术2群：117698356
+  + QQ技术1群：728661815（1群已满，请加3群）
+  + QQ技术2群：117698356（1群已满，请加3群）
+  + QQ技术3群：891252940
 * 邮箱:  robot4xiihoo@163.com
 * 源码:  https://github.com/xiihoo/Books_Robot_SLAM_Navigation
 * 购书链接：https://item.jd.com/13041503.html
@@ -99,6 +100,7 @@
   + 1-第1季：第3章_OpenCV图像处理.pdf
   + 1-第1季：第4章_机器人传感器.pdf
   + 1-第1季：第5章_机器人主机.pdf
+  + 1-第1季：第6章_机器人底盘.pdf
   + 更新中......
 * **3.习题答案**
   + 附录B_习题.pdf
@@ -170,4 +172,8 @@
   + <a href="https://www.bilibili.com/video/BV1jS4y1a7Lz?p=50">【第1季】5.3.第5章_机器人主机_ARM主机RK3399-视频讲解</a>
   + <a href="https://www.bilibili.com/video/BV1jS4y1a7Lz?p=51">【第1季】5.4.第5章_机器人主机_ARM主机Jetson-tx2-视频讲解</a>
   + <a href="https://www.bilibili.com/video/BV1jS4y1a7Lz?p=52">【第1季】5.5.第5章_机器人主机_分布式架构主机-视频讲解</a>
+  + <a href="https://www.bilibili.com/video/BV1jS4y1a7Lz?p=53">【第1季】6.第6章_机器人底盘-视频讲解</a>
+  + <a href="https://www.bilibili.com/video/BV1jS4y1a7Lz?p=54">【第1季】6.1.第6章_机器人底盘_底盘运动学模型-视频讲解</a>
+  + <a href="https://www.bilibili.com/video/BV1jS4y1a7Lz?p=55">【第1季】6.2.第6章_机器人底盘_底盘性能指标-视频讲解</a>
+  + <a href="https://www.bilibili.com/video/BV1jS4y1a7Lz?p=56">【第1季】6.3.第6章_机器人底盘_典型机器人底盘搭建-视频讲解</a>
   + 更多精彩内容，正在更新...
