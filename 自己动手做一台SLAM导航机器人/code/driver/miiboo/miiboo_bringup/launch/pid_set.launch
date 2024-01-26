@@ -1,0 +1,5 @@
+<launch>
+    <node name="miiboo_pid_set_node" pkg="miiboo_bringup" type="pid_set" output="screen">
+		<param name="com_port" value="/dev/ttyUSB0"/>
+    </node>
+</launch>

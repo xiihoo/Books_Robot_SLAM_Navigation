@@ -1,0 +1,791 @@
+\hypertarget{classserial_1_1_serial}{}\section{serial\+:\+:Serial Class Reference}
+\label{classserial_1_1_serial}\index{serial\+::\+Serial@{serial\+::\+Serial}}
+
+
+{\ttfamily \#include $<$serial.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classserial_1_1_serial_1_1_scoped_read_lock}{Scoped\+Read\+Lock}
+\item 
+class \hyperlink{classserial_1_1_serial_1_1_scoped_write_lock}{Scoped\+Write\+Lock}
+\item 
+class \hyperlink{classserial_1_1serial_1_1_serial_1_1_serial_impl}{Serial\+Impl}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classserial_1_1_serial_aecbc4cc1723143805ae5a4aa79ba9332}{Serial} (const std\+::string \&port=\char`\"{}\char`\"{}, uint32\+\_\+t baudrate=9600, \hyperlink{structserial_1_1_timeout}{Timeout} timeout=\hyperlink{structserial_1_1_timeout}{Timeout}(), \hyperlink{namespaceserial_a00b3281fa11cea770c0b0c8a106080f8}{bytesize\+\_\+t} bytesize=eightbits, \hyperlink{namespaceserial_a8f45d26bf7c9a06659e75b5004a50481}{parity\+\_\+t} parity=parity\+\_\+none, \hyperlink{namespaceserial_af5b116611d6628a3aa8f788fdc09f469}{stopbits\+\_\+t} stopbits=stopbits\+\_\+one, \hyperlink{namespaceserial_a93ef57a314b4e562f9eded6c15d34351}{flowcontrol\+\_\+t} flowcontrol=flowcontrol\+\_\+none)
+\item 
+virtual \hyperlink{classserial_1_1_serial_a071000a2f5f77a40df8311fad5044481}{$\sim$\+Serial} ()
+\item 
+bool \hyperlink{classserial_1_1_serial_aa4403ddb51e9d209fd86ed316f0ee9b4}{open} ()
+\item 
+bool \hyperlink{classserial_1_1_serial_a48458f741d0fdcc5623b4daa079cbf78}{is\+Open} () const 
+\item 
+void \hyperlink{classserial_1_1_serial_a501082725b61e4baf615266065bbac5f}{close} ()
+\item 
+size\+\_\+t \hyperlink{classserial_1_1_serial_ab5fae6cebb8e34345ca1f55cbccc4698}{available} ()
+\item 
+bool \hyperlink{classserial_1_1_serial_a59bd8d40309769e8eed91dd3684e0000}{wait\+Readable} ()
+\item 
+void \hyperlink{classserial_1_1_serial_a35c0f6ff20c142a5210dde288731f954}{wait\+Byte\+Times} (size\+\_\+t count)
+\item 
+int {\bfseries waitfordata} (size\+\_\+t data\+\_\+count, uint32\+\_\+t timeout, size\+\_\+t $\ast$returned\+\_\+size)\hypertarget{classserial_1_1_serial_aa94e4ca3b2b803e3145c99fe063ae09b}{}\label{classserial_1_1_serial_aa94e4ca3b2b803e3145c99fe063ae09b}
+
+\item 
+size\+\_\+t \hyperlink{classserial_1_1_serial_a01fc2e3d77cb7d70069de87eca1400e9}{read} (uint8\+\_\+t $\ast$buffer, size\+\_\+t size)
+\item 
+size\+\_\+t \hyperlink{classserial_1_1_serial_a3ecd4645c76548ba079eab6f2f46adfb}{read} (std\+::vector$<$ uint8\+\_\+t $>$ \&buffer, size\+\_\+t size=1)
+\item 
+size\+\_\+t \hyperlink{classserial_1_1_serial_ad6c6637fdf8edd85c3a6a63d98fc18f7}{read} (std\+::string \&buffer, size\+\_\+t size=1)
+\item 
+std\+::string \hyperlink{classserial_1_1_serial_aa52fbf7d23fb761a46e2400829d2b77a}{read} (size\+\_\+t size=1)
+\item 
+size\+\_\+t \hyperlink{classserial_1_1_serial_a010b18ec545dfe1a7bb1c95be4bdaa54}{readline} (std\+::string \&buffer, size\+\_\+t size=65536, std\+::string eol=\char`\"{}\textbackslash{}n\char`\"{})
+\item 
+std\+::string \hyperlink{classserial_1_1_serial_a04177f637cc02f92ec0492d377528b2a}{readline} (size\+\_\+t size=65536, std\+::string eol=\char`\"{}\textbackslash{}n\char`\"{})
+\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{classserial_1_1_serial_a2ff222081c30ee4343498c6cc5c14b10}{readlines} (size\+\_\+t size=65536, std\+::string eol=\char`\"{}\textbackslash{}n\char`\"{})
+\item 
+size\+\_\+t \hyperlink{classserial_1_1_serial_a3275e8456850998c0ac46b2768ab9258}{write} (const uint8\+\_\+t $\ast$data, size\+\_\+t size)
+\item 
+size\+\_\+t \hyperlink{classserial_1_1_serial_a9c2827088d82ee82f245ffa106fa7d10}{write} (const std\+::vector$<$ uint8\+\_\+t $>$ \&data)
+\item 
+size\+\_\+t \hyperlink{classserial_1_1_serial_a7c92c0307b86a935f6623953eec66460}{write} (const std\+::string \&data)
+\item 
+void \hyperlink{classserial_1_1_serial_a127104a1b211c46e4cad9002123e6ea8}{set\+Port} (const std\+::string \&port)
+\item 
+std\+::string \hyperlink{classserial_1_1_serial_a56eafe1694c92655d79993ce7139f0bf}{get\+Port} () const 
+\item 
+void \hyperlink{classserial_1_1_serial_a5b1a4e05b1690d29ba1ae14a9079434c}{set\+Timeout} (\hyperlink{structserial_1_1_timeout}{Timeout} \&timeout)
+\item 
+void \hyperlink{classserial_1_1_serial_a4b4be39af3e1c68bc6ac09cb55788c86}{set\+Timeout} (uint32\+\_\+t inter\+\_\+byte\+\_\+timeout, uint32\+\_\+t read\+\_\+timeout\+\_\+constant, uint32\+\_\+t read\+\_\+timeout\+\_\+multiplier, uint32\+\_\+t write\+\_\+timeout\+\_\+constant, uint32\+\_\+t write\+\_\+timeout\+\_\+multiplier)
+\item 
+\hyperlink{structserial_1_1_timeout}{Timeout} \hyperlink{classserial_1_1_serial_a13023f118c75b27fa2f0280d2d1c2a20}{get\+Timeout} () const 
+\item 
+bool \hyperlink{classserial_1_1_serial_a05085fc22adee665698bdfd9b7b9783f}{set\+Baudrate} (uint32\+\_\+t baudrate)
+\item 
+uint32\+\_\+t \hyperlink{classserial_1_1_serial_a7a6ca1f8d8e68742e95b7f8dc8e9a1fa}{get\+Baudrate} () const 
+\item 
+bool \hyperlink{classserial_1_1_serial_a8adf3dcd68fb1b85ce30c8b443e5868a}{set\+Bytesize} (\hyperlink{namespaceserial_a00b3281fa11cea770c0b0c8a106080f8}{bytesize\+\_\+t} bytesize)
+\item 
+\hyperlink{namespaceserial_a00b3281fa11cea770c0b0c8a106080f8}{bytesize\+\_\+t} \hyperlink{classserial_1_1_serial_ac735ef88a54659e2d0b3ae674c5f0a41}{get\+Bytesize} () const 
+\item 
+bool \hyperlink{classserial_1_1_serial_af471db5d3a89128430e7e3c5389cd08a}{set\+Parity} (\hyperlink{namespaceserial_a8f45d26bf7c9a06659e75b5004a50481}{parity\+\_\+t} parity)
+\item 
+\hyperlink{namespaceserial_a8f45d26bf7c9a06659e75b5004a50481}{parity\+\_\+t} \hyperlink{classserial_1_1_serial_a80e5d87b1e93b4c5a9d6f2cc7110b3c4}{get\+Parity} () const 
+\item 
+bool \hyperlink{classserial_1_1_serial_a0c690a31516cd11c521ba3aff4bafc4e}{set\+Stopbits} (\hyperlink{namespaceserial_af5b116611d6628a3aa8f788fdc09f469}{stopbits\+\_\+t} stopbits)
+\item 
+\hyperlink{namespaceserial_af5b116611d6628a3aa8f788fdc09f469}{stopbits\+\_\+t} \hyperlink{classserial_1_1_serial_a81ee96ec2fdb80d1851430d9e2c4698b}{get\+Stopbits} () const 
+\item 
+bool \hyperlink{classserial_1_1_serial_a76e56ce22e2706b8954a1dc9c5188c92}{set\+Flowcontrol} (\hyperlink{namespaceserial_a93ef57a314b4e562f9eded6c15d34351}{flowcontrol\+\_\+t} flowcontrol)
+\item 
+\hyperlink{namespaceserial_a93ef57a314b4e562f9eded6c15d34351}{flowcontrol\+\_\+t} \hyperlink{classserial_1_1_serial_ad793526755625a59a0bf9d4cc0ea1755}{get\+Flowcontrol} () const 
+\item 
+void \hyperlink{classserial_1_1_serial_a45a7676a6e6c775cd549e889e714b5bb}{flush} ()
+\item 
+void \hyperlink{classserial_1_1_serial_aa7432cbada95a7eac6d71a107cf2eaa3}{flush\+Input} ()
+\item 
+void \hyperlink{classserial_1_1_serial_a95e0d6dcf2b7b9aa45225bfb1647c427}{flush\+Output} ()
+\item 
+void \hyperlink{classserial_1_1_serial_ab35e474beb136258cbeb04978be27455}{send\+Break} (int duration)
+\item 
+bool \hyperlink{classserial_1_1_serial_abb7eef9db06c582e2e504733b4150968}{set\+Break} (bool level=true)
+\item 
+bool \hyperlink{classserial_1_1_serial_a7c91f22768107389f52d80d691994fc7}{set\+R\+TS} (bool level=true)
+\item 
+bool \hyperlink{classserial_1_1_serial_a4c8a44a1e6ce42f8cb521d9a4e10bc59}{set\+D\+TR} (bool level=true)
+\item 
+bool \hyperlink{classserial_1_1_serial_a9d889dc0ec2cec50a620650f10cf8e83}{wait\+For\+Change} ()
+\item 
+bool \hyperlink{classserial_1_1_serial_a97603438c9ded81a886f914b7a335d7f}{get\+C\+TS} ()
+\item 
+bool \hyperlink{classserial_1_1_serial_a91a00816bce6a163ea022b4cf8d4ce0e}{get\+D\+SR} ()
+\item 
+bool \hyperlink{classserial_1_1_serial_a29a1f68b9a238e9a6a833373855708ce}{get\+RI} ()
+\item 
+bool \hyperlink{classserial_1_1_serial_a5a7c1a8e363b530147970155d0f6fe8d}{get\+CD} ()
+\item 
+uint32\+\_\+t \hyperlink{classserial_1_1_serial_a8b7ad05b2521db6bbf184108f59e105e}{get\+Byte\+Time} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class that provides a portable serial port interface. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{serial\+::\+Serial@{serial\+::\+Serial}!Serial@{Serial}}
+\index{Serial@{Serial}!serial\+::\+Serial@{serial\+::\+Serial}}
+\subsubsection[{\texorpdfstring{Serial(const std\+::string \&port="""", uint32\+\_\+t baudrate=9600, Timeout timeout=\+Timeout(), bytesize\+\_\+t bytesize=eightbits, parity\+\_\+t parity=parity\+\_\+none, stopbits\+\_\+t stopbits=stopbits\+\_\+one, flowcontrol\+\_\+t flowcontrol=flowcontrol\+\_\+none)}{Serial(const std::string &port="", uint32_t baudrate=9600, Timeout timeout=Timeout(), bytesize_t bytesize=eightbits, parity_t parity=parity_none, stopbits_t stopbits=stopbits_one, flowcontrol_t flowcontrol=flowcontrol_none)}}]{\setlength{\rightskip}{0pt plus 5cm}serial\+::\+Serial\+::\+Serial (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{port = {\ttfamily \char`\"{}\char`\"{}}, }
+\item[{uint32\+\_\+t}]{baudrate = {\ttfamily 9600}, }
+\item[{{\bf Timeout}}]{timeout = {\ttfamily {\bf Timeout}()}, }
+\item[{{\bf bytesize\+\_\+t}}]{bytesize = {\ttfamily eightbits}, }
+\item[{{\bf parity\+\_\+t}}]{parity = {\ttfamily parity\+\_\+none}, }
+\item[{{\bf stopbits\+\_\+t}}]{stopbits = {\ttfamily stopbits\+\_\+one}, }
+\item[{{\bf flowcontrol\+\_\+t}}]{flowcontrol = {\ttfamily flowcontrol\+\_\+none}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}\hypertarget{classserial_1_1_serial_aecbc4cc1723143805ae5a4aa79ba9332}{}\label{classserial_1_1_serial_aecbc4cc1723143805ae5a4aa79ba9332}
+Creates a \hyperlink{classserial_1_1_serial}{Serial} object and opens the port if a port is specified, otherwise it remains closed until \hyperlink{classserial_1_1_serial_aa4403ddb51e9d209fd86ed316f0ee9b4}{serial\+::\+Serial\+::open} is called.
+
+
+\begin{DoxyParams}{Parameters}
+{\em port} & A std\+::string containing the address of the serial port, which would be something like \textquotesingle{}C\+O\+M1\textquotesingle{} on Windows and \textquotesingle{}/dev/tty\+S0\textquotesingle{} on Linux.\\
+\hline
+{\em baudrate} & An unsigned 32-\/bit integer that represents the baudrate\\
+\hline
+{\em timeout} & A \hyperlink{structserial_1_1_timeout}{serial\+::\+Timeout} struct that defines the timeout conditions for the serial port. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{structserial_1_1_timeout}{serial\+::\+Timeout}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em bytesize} & Size of each byte in the serial transmission of data, default is eightbits, possible values are\+: fivebits, sixbits, sevenbits, eightbits\\
+\hline
+{\em parity} & Method of parity, default is parity\+\_\+none, possible values are\+: parity\+\_\+none, parity\+\_\+odd, parity\+\_\+even\\
+\hline
+{\em stopbits} & Number of stop bits used, default is stopbits\+\_\+one, possible values are\+: stopbits\+\_\+one, stopbits\+\_\+one\+\_\+point\+\_\+five, stopbits\+\_\+two\\
+\hline
+{\em flowcontrol} & Type of flowcontrol used, default is flowcontrol\+\_\+none, possible values are\+: flowcontrol\+\_\+none, flowcontrol\+\_\+software, flowcontrol\+\_\+hardware\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em serial\+::\+Port\+Not\+Opened\+Exception} & \\
+\hline
+{\em serial\+::\+I\+O\+Exception} & \\
+\hline
+{\em std\+::invalid\+\_\+argument} & \\
+\hline
+\end{DoxyExceptions}
+\index{serial\+::\+Serial@{serial\+::\+Serial}!````~Serial@{$\sim$\+Serial}}
+\index{````~Serial@{$\sim$\+Serial}!serial\+::\+Serial@{serial\+::\+Serial}}
+\subsubsection[{\texorpdfstring{$\sim$\+Serial()}{~Serial()}}]{\setlength{\rightskip}{0pt plus 5cm}serial\+::\+Serial\+::$\sim$\+Serial (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classserial_1_1_serial_a071000a2f5f77a40df8311fad5044481}{}\label{classserial_1_1_serial_a071000a2f5f77a40df8311fad5044481}
+Destructor 
+
+\subsection{Member Function Documentation}
+\index{serial\+::\+Serial@{serial\+::\+Serial}!available@{available}}
+\index{available@{available}!serial\+::\+Serial@{serial\+::\+Serial}}
+\subsubsection[{\texorpdfstring{available()}{available()}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t serial\+::\+Serial\+::available (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classserial_1_1_serial_ab5fae6cebb8e34345ca1f55cbccc4698}{}\label{classserial_1_1_serial_ab5fae6cebb8e34345ca1f55cbccc4698}
+Return the number of characters in the buffer. \index{serial\+::\+Serial@{serial\+::\+Serial}!close@{close}}
+\index{close@{close}!serial\+::\+Serial@{serial\+::\+Serial}}
+\subsubsection[{\texorpdfstring{close()}{close()}}]{\setlength{\rightskip}{0pt plus 5cm}void serial\+::\+Serial\+::close (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classserial_1_1_serial_a501082725b61e4baf615266065bbac5f}{}\label{classserial_1_1_serial_a501082725b61e4baf615266065bbac5f}
+Closes the serial port. \index{serial\+::\+Serial@{serial\+::\+Serial}!flush@{flush}}
+\index{flush@{flush}!serial\+::\+Serial@{serial\+::\+Serial}}
+\subsubsection[{\texorpdfstring{flush()}{flush()}}]{\setlength{\rightskip}{0pt plus 5cm}void serial\+::\+Serial\+::flush (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classserial_1_1_serial_a45a7676a6e6c775cd549e889e714b5bb}{}\label{classserial_1_1_serial_a45a7676a6e6c775cd549e889e714b5bb}
+Flush the input and output buffers \index{serial\+::\+Serial@{serial\+::\+Serial}!flush\+Input@{flush\+Input}}
+\index{flush\+Input@{flush\+Input}!serial\+::\+Serial@{serial\+::\+Serial}}
+\subsubsection[{\texorpdfstring{flush\+Input()}{flushInput()}}]{\setlength{\rightskip}{0pt plus 5cm}void serial\+::\+Serial\+::flush\+Input (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classserial_1_1_serial_aa7432cbada95a7eac6d71a107cf2eaa3}{}\label{classserial_1_1_serial_aa7432cbada95a7eac6d71a107cf2eaa3}
+Flush only the input buffer \index{serial\+::\+Serial@{serial\+::\+Serial}!flush\+Output@{flush\+Output}}
+\index{flush\+Output@{flush\+Output}!serial\+::\+Serial@{serial\+::\+Serial}}
+\subsubsection[{\texorpdfstring{flush\+Output()}{flushOutput()}}]{\setlength{\rightskip}{0pt plus 5cm}void serial\+::\+Serial\+::flush\+Output (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classserial_1_1_serial_a95e0d6dcf2b7b9aa45225bfb1647c427}{}\label{classserial_1_1_serial_a95e0d6dcf2b7b9aa45225bfb1647c427}
+Flush only the output buffer \index{serial\+::\+Serial@{serial\+::\+Serial}!get\+Baudrate@{get\+Baudrate}}
+\index{get\+Baudrate@{get\+Baudrate}!serial\+::\+Serial@{serial\+::\+Serial}}
+\subsubsection[{\texorpdfstring{get\+Baudrate() const }{getBaudrate() const }}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t serial\+::\+Serial\+::get\+Baudrate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classserial_1_1_serial_a7a6ca1f8d8e68742e95b7f8dc8e9a1fa}{}\label{classserial_1_1_serial_a7a6ca1f8d8e68742e95b7f8dc8e9a1fa}
+Gets the baudrate for the serial port.
+
+\begin{DoxyReturn}{Returns}
+An integer that sets the baud rate for the serial port.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classserial_1_1_serial_a05085fc22adee665698bdfd9b7b9783f}{Serial\+::set\+Baudrate}
+\end{DoxySeeAlso}
+\textbackslash{} \index{serial\+::\+Serial@{serial\+::\+Serial}!get\+Bytesize@{get\+Bytesize}}
+\index{get\+Bytesize@{get\+Bytesize}!serial\+::\+Serial@{serial\+::\+Serial}}
+\subsubsection[{\texorpdfstring{get\+Bytesize() const }{getBytesize() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf bytesize\+\_\+t} serial\+::\+Serial\+::get\+Bytesize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classserial_1_1_serial_ac735ef88a54659e2d0b3ae674c5f0a41}{}\label{classserial_1_1_serial_ac735ef88a54659e2d0b3ae674c5f0a41}
+Gets the bytesize for the serial port.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classserial_1_1_serial_a8adf3dcd68fb1b85ce30c8b443e5868a}{Serial\+::set\+Bytesize}
+\end{DoxySeeAlso}
+\textbackslash{} \index{serial\+::\+Serial@{serial\+::\+Serial}!get\+Byte\+Time@{get\+Byte\+Time}}
+\index{get\+Byte\+Time@{get\+Byte\+Time}!serial\+::\+Serial@{serial\+::\+Serial}}
+\subsubsection[{\texorpdfstring{get\+Byte\+Time()}{getByteTime()}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t serial\+::\+Serial\+::get\+Byte\+Time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classserial_1_1_serial_a8b7ad05b2521db6bbf184108f59e105e}{}\label{classserial_1_1_serial_a8b7ad05b2521db6bbf184108f59e105e}
+Returns the singal byte time. \index{serial\+::\+Serial@{serial\+::\+Serial}!get\+CD@{get\+CD}}
+\index{get\+CD@{get\+CD}!serial\+::\+Serial@{serial\+::\+Serial}}
+\subsubsection[{\texorpdfstring{get\+C\+D()}{getCD()}}]{\setlength{\rightskip}{0pt plus 5cm}bool serial\+::\+Serial\+::get\+CD (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classserial_1_1_serial_a5a7c1a8e363b530147970155d0f6fe8d}{}\label{classserial_1_1_serial_a5a7c1a8e363b530147970155d0f6fe8d}
+Returns the current status of the CD line. \index{serial\+::\+Serial@{serial\+::\+Serial}!get\+C\+TS@{get\+C\+TS}}
+\index{get\+C\+TS@{get\+C\+TS}!serial\+::\+Serial@{serial\+::\+Serial}}
+\subsubsection[{\texorpdfstring{get\+C\+T\+S()}{getCTS()}}]{\setlength{\rightskip}{0pt plus 5cm}bool serial\+::\+Serial\+::get\+C\+TS (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classserial_1_1_serial_a97603438c9ded81a886f914b7a335d7f}{}\label{classserial_1_1_serial_a97603438c9ded81a886f914b7a335d7f}
+Returns the current status of the C\+TS line. \index{serial\+::\+Serial@{serial\+::\+Serial}!get\+D\+SR@{get\+D\+SR}}
+\index{get\+D\+SR@{get\+D\+SR}!serial\+::\+Serial@{serial\+::\+Serial}}
+\subsubsection[{\texorpdfstring{get\+D\+S\+R()}{getDSR()}}]{\setlength{\rightskip}{0pt plus 5cm}bool serial\+::\+Serial\+::get\+D\+SR (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classserial_1_1_serial_a91a00816bce6a163ea022b4cf8d4ce0e}{}\label{classserial_1_1_serial_a91a00816bce6a163ea022b4cf8d4ce0e}
+Returns the current status of the D\+SR line. \index{serial\+::\+Serial@{serial\+::\+Serial}!get\+Flowcontrol@{get\+Flowcontrol}}
+\index{get\+Flowcontrol@{get\+Flowcontrol}!serial\+::\+Serial@{serial\+::\+Serial}}
+\subsubsection[{\texorpdfstring{get\+Flowcontrol() const }{getFlowcontrol() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf flowcontrol\+\_\+t} serial\+::\+Serial\+::get\+Flowcontrol (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classserial_1_1_serial_ad793526755625a59a0bf9d4cc0ea1755}{}\label{classserial_1_1_serial_ad793526755625a59a0bf9d4cc0ea1755}
+Gets the flow control for the serial port.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classserial_1_1_serial_a76e56ce22e2706b8954a1dc9c5188c92}{Serial\+::set\+Flowcontrol}
+\end{DoxySeeAlso}
+\textbackslash{} \index{serial\+::\+Serial@{serial\+::\+Serial}!get\+Parity@{get\+Parity}}
+\index{get\+Parity@{get\+Parity}!serial\+::\+Serial@{serial\+::\+Serial}}
+\subsubsection[{\texorpdfstring{get\+Parity() const }{getParity() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf parity\+\_\+t} serial\+::\+Serial\+::get\+Parity (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classserial_1_1_serial_a80e5d87b1e93b4c5a9d6f2cc7110b3c4}{}\label{classserial_1_1_serial_a80e5d87b1e93b4c5a9d6f2cc7110b3c4}
+Gets the parity for the serial port.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classserial_1_1_serial_af471db5d3a89128430e7e3c5389cd08a}{Serial\+::set\+Parity}
+\end{DoxySeeAlso}
+\textbackslash{} \index{serial\+::\+Serial@{serial\+::\+Serial}!get\+Port@{get\+Port}}
+\index{get\+Port@{get\+Port}!serial\+::\+Serial@{serial\+::\+Serial}}
+\subsubsection[{\texorpdfstring{get\+Port() const }{getPort() const }}]{\setlength{\rightskip}{0pt plus 5cm}string serial\+::\+Serial\+::get\+Port (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classserial_1_1_serial_a56eafe1694c92655d79993ce7139f0bf}{}\label{classserial_1_1_serial_a56eafe1694c92655d79993ce7139f0bf}
+Gets the serial port identifier.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classserial_1_1_serial_a127104a1b211c46e4cad9002123e6ea8}{Serial\+::set\+Port}
+\end{DoxySeeAlso}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::invalid\+\_\+argument} & \\
+\hline
+\end{DoxyExceptions}
+\index{serial\+::\+Serial@{serial\+::\+Serial}!get\+RI@{get\+RI}}
+\index{get\+RI@{get\+RI}!serial\+::\+Serial@{serial\+::\+Serial}}
+\subsubsection[{\texorpdfstring{get\+R\+I()}{getRI()}}]{\setlength{\rightskip}{0pt plus 5cm}bool serial\+::\+Serial\+::get\+RI (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classserial_1_1_serial_a29a1f68b9a238e9a6a833373855708ce}{}\label{classserial_1_1_serial_a29a1f68b9a238e9a6a833373855708ce}
+Returns the current status of the RI line. \index{serial\+::\+Serial@{serial\+::\+Serial}!get\+Stopbits@{get\+Stopbits}}
+\index{get\+Stopbits@{get\+Stopbits}!serial\+::\+Serial@{serial\+::\+Serial}}
+\subsubsection[{\texorpdfstring{get\+Stopbits() const }{getStopbits() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf stopbits\+\_\+t} serial\+::\+Serial\+::get\+Stopbits (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classserial_1_1_serial_a81ee96ec2fdb80d1851430d9e2c4698b}{}\label{classserial_1_1_serial_a81ee96ec2fdb80d1851430d9e2c4698b}
+Gets the stopbits for the serial port.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classserial_1_1_serial_a0c690a31516cd11c521ba3aff4bafc4e}{Serial\+::set\+Stopbits}
+\end{DoxySeeAlso}
+\textbackslash{} \index{serial\+::\+Serial@{serial\+::\+Serial}!get\+Timeout@{get\+Timeout}}
+\index{get\+Timeout@{get\+Timeout}!serial\+::\+Serial@{serial\+::\+Serial}}
+\subsubsection[{\texorpdfstring{get\+Timeout() const }{getTimeout() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf serial\+::\+Timeout} serial\+::\+Serial\+::get\+Timeout (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classserial_1_1_serial_a13023f118c75b27fa2f0280d2d1c2a20}{}\label{classserial_1_1_serial_a13023f118c75b27fa2f0280d2d1c2a20}
+Gets the timeout for reads in seconds.
+
+\begin{DoxyReturn}{Returns}
+A \hyperlink{structserial_1_1_timeout}{Timeout} struct containing the inter\+\_\+byte\+\_\+timeout, and read and write timeout constants and multipliers.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classserial_1_1_serial_a5b1a4e05b1690d29ba1ae14a9079434c}{Serial\+::set\+Timeout} 
+\end{DoxySeeAlso}
+\index{serial\+::\+Serial@{serial\+::\+Serial}!is\+Open@{is\+Open}}
+\index{is\+Open@{is\+Open}!serial\+::\+Serial@{serial\+::\+Serial}}
+\subsubsection[{\texorpdfstring{is\+Open() const }{isOpen() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool serial\+::\+Serial\+::is\+Open (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classserial_1_1_serial_a48458f741d0fdcc5623b4daa079cbf78}{}\label{classserial_1_1_serial_a48458f741d0fdcc5623b4daa079cbf78}
+Gets the open status of the serial port.
+
+\begin{DoxyReturn}{Returns}
+Returns true if the port is open, false otherwise. 
+\end{DoxyReturn}
+\index{serial\+::\+Serial@{serial\+::\+Serial}!open@{open}}
+\index{open@{open}!serial\+::\+Serial@{serial\+::\+Serial}}
+\subsubsection[{\texorpdfstring{open()}{open()}}]{\setlength{\rightskip}{0pt plus 5cm}bool serial\+::\+Serial\+::open (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classserial_1_1_serial_aa4403ddb51e9d209fd86ed316f0ee9b4}{}\label{classserial_1_1_serial_aa4403ddb51e9d209fd86ed316f0ee9b4}
+Opens the serial port as long as the port is set and the port isn\textquotesingle{}t already open.
+
+If the port is provided to the constructor then an explicit call to open is not needed.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classserial_1_1_serial_aecbc4cc1723143805ae5a4aa79ba9332}{Serial\+::\+Serial} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+Returns true if the port is open, false otherwise. 
+\end{DoxyReturn}
+\index{serial\+::\+Serial@{serial\+::\+Serial}!read@{read}}
+\index{read@{read}!serial\+::\+Serial@{serial\+::\+Serial}}
+\subsubsection[{\texorpdfstring{read(uint8\+\_\+t $\ast$buffer, size\+\_\+t size)}{read(uint8_t *buffer, size_t size)}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t serial\+::\+Serial\+::read (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t $\ast$}]{buffer, }
+\item[{size\+\_\+t}]{size}
+\end{DoxyParamCaption}
+)}\hypertarget{classserial_1_1_serial_a01fc2e3d77cb7d70069de87eca1400e9}{}\label{classserial_1_1_serial_a01fc2e3d77cb7d70069de87eca1400e9}
+Read a given amount of bytes from the serial port into a given buffer.
+
+The read function will return in one of three cases\+:
+\begin{DoxyItemize}
+\item The number of requested bytes was read.
+\begin{DoxyItemize}
+\item In this case the number of bytes requested will match the size\+\_\+t returned by read.
+\end{DoxyItemize}
+\item A timeout occurred, in this case the number of bytes read will not match the amount requested, but no exception will be thrown. One of two possible timeouts occurred\+:
+\begin{DoxyItemize}
+\item The inter byte timeout expired, this means that number of milliseconds elapsed between receiving bytes from the serial port exceeded the inter byte timeout.
+\item The total timeout expired, which is calculated by multiplying the read timeout multiplier by the number of requested bytes and then added to the read timeout constant. If that total number of milliseconds elapses after the initial call to read a timeout will occur.
+\end{DoxyItemize}
+\item An exception occurred, in this case an actual exception will be thrown.
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffer} & An uint8\+\_\+t array of at least the requested size. \\
+\hline
+{\em size} & A size\+\_\+t defining how many bytes to be read.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A size\+\_\+t representing the number of bytes read as a result of the call to read. 
+\end{DoxyReturn}
+\index{serial\+::\+Serial@{serial\+::\+Serial}!read@{read}}
+\index{read@{read}!serial\+::\+Serial@{serial\+::\+Serial}}
+\subsubsection[{\texorpdfstring{read(std\+::vector$<$ uint8\+\_\+t $>$ \&buffer, size\+\_\+t size=1)}{read(std::vector< uint8_t > &buffer, size_t size=1)}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t serial\+::\+Serial\+::read (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ uint8\+\_\+t $>$ \&}]{buffer, }
+\item[{size\+\_\+t}]{size = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)}\hypertarget{classserial_1_1_serial_a3ecd4645c76548ba079eab6f2f46adfb}{}\label{classserial_1_1_serial_a3ecd4645c76548ba079eab6f2f46adfb}
+Read a given amount of bytes from the serial port into a give buffer.
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffer} & A reference to a std\+::vector of uint8\+\_\+t. \\
+\hline
+{\em size} & A size\+\_\+t defining how many bytes to be read.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A size\+\_\+t representing the number of bytes read as a result of the call to read. 
+\end{DoxyReturn}
+\index{serial\+::\+Serial@{serial\+::\+Serial}!read@{read}}
+\index{read@{read}!serial\+::\+Serial@{serial\+::\+Serial}}
+\subsubsection[{\texorpdfstring{read(std\+::string \&buffer, size\+\_\+t size=1)}{read(std::string &buffer, size_t size=1)}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t serial\+::\+Serial\+::read (
+\begin{DoxyParamCaption}
+\item[{std\+::string \&}]{buffer, }
+\item[{size\+\_\+t}]{size = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)}\hypertarget{classserial_1_1_serial_ad6c6637fdf8edd85c3a6a63d98fc18f7}{}\label{classserial_1_1_serial_ad6c6637fdf8edd85c3a6a63d98fc18f7}
+Read a given amount of bytes from the serial port into a give buffer.
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffer} & A reference to a std\+::string. \\
+\hline
+{\em size} & A size\+\_\+t defining how many bytes to be read.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A size\+\_\+t representing the number of bytes read as a result of the call to read. 
+\end{DoxyReturn}
+\index{serial\+::\+Serial@{serial\+::\+Serial}!read@{read}}
+\index{read@{read}!serial\+::\+Serial@{serial\+::\+Serial}}
+\subsubsection[{\texorpdfstring{read(size\+\_\+t size=1)}{read(size_t size=1)}}]{\setlength{\rightskip}{0pt plus 5cm}string serial\+::\+Serial\+::read (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{size = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)}\hypertarget{classserial_1_1_serial_aa52fbf7d23fb761a46e2400829d2b77a}{}\label{classserial_1_1_serial_aa52fbf7d23fb761a46e2400829d2b77a}
+Read a given amount of bytes from the serial port and return a string containing the data.
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & A size\+\_\+t defining how many bytes to be read.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A std\+::string containing the data read from the port. 
+\end{DoxyReturn}
+\index{serial\+::\+Serial@{serial\+::\+Serial}!readline@{readline}}
+\index{readline@{readline}!serial\+::\+Serial@{serial\+::\+Serial}}
+\subsubsection[{\texorpdfstring{readline(std\+::string \&buffer, size\+\_\+t size=65536, std\+::string eol=""\textbackslash{}n"")}{readline(std::string &buffer, size_t size=65536, std::string eol="\textbackslash{}n")}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t serial\+::\+Serial\+::readline (
+\begin{DoxyParamCaption}
+\item[{std\+::string \&}]{buffer, }
+\item[{size\+\_\+t}]{size = {\ttfamily 65536}, }
+\item[{std\+::string}]{eol = {\ttfamily \char`\"{}\textbackslash{}n\char`\"{}}}
+\end{DoxyParamCaption}
+)}\hypertarget{classserial_1_1_serial_a010b18ec545dfe1a7bb1c95be4bdaa54}{}\label{classserial_1_1_serial_a010b18ec545dfe1a7bb1c95be4bdaa54}
+Reads in a line or until a given delimiter has been processed.
+
+Reads from the serial port until a single line has been read.
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffer} & A std\+::string reference used to store the data. \\
+\hline
+{\em size} & A maximum length of a line, defaults to 65536 (2$^\wedge$16) \\
+\hline
+{\em eol} & A string to match against for the E\+OL.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A size\+\_\+t representing the number of bytes read. 
+\end{DoxyReturn}
+\index{serial\+::\+Serial@{serial\+::\+Serial}!readline@{readline}}
+\index{readline@{readline}!serial\+::\+Serial@{serial\+::\+Serial}}
+\subsubsection[{\texorpdfstring{readline(size\+\_\+t size=65536, std\+::string eol=""\textbackslash{}n"")}{readline(size_t size=65536, std::string eol="\textbackslash{}n")}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string serial\+::\+Serial\+::readline (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{size = {\ttfamily 65536}, }
+\item[{std\+::string}]{eol = {\ttfamily \char`\"{}\textbackslash{}n\char`\"{}}}
+\end{DoxyParamCaption}
+)}\hypertarget{classserial_1_1_serial_a04177f637cc02f92ec0492d377528b2a}{}\label{classserial_1_1_serial_a04177f637cc02f92ec0492d377528b2a}
+Reads in a line or until a given delimiter has been processed.
+
+Reads from the serial port until a single line has been read.
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & A maximum length of a line, defaults to 65536 (2$^\wedge$16) \\
+\hline
+{\em eol} & A string to match against for the E\+OL.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A std\+::string containing the line. 
+\end{DoxyReturn}
+\index{serial\+::\+Serial@{serial\+::\+Serial}!readlines@{readlines}}
+\index{readlines@{readlines}!serial\+::\+Serial@{serial\+::\+Serial}}
+\subsubsection[{\texorpdfstring{readlines(size\+\_\+t size=65536, std\+::string eol=""\textbackslash{}n"")}{readlines(size_t size=65536, std::string eol="\textbackslash{}n")}}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ string $>$ serial\+::\+Serial\+::readlines (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{size = {\ttfamily 65536}, }
+\item[{std\+::string}]{eol = {\ttfamily \char`\"{}\textbackslash{}n\char`\"{}}}
+\end{DoxyParamCaption}
+)}\hypertarget{classserial_1_1_serial_a2ff222081c30ee4343498c6cc5c14b10}{}\label{classserial_1_1_serial_a2ff222081c30ee4343498c6cc5c14b10}
+Reads in multiple lines until the serial port times out.
+
+This requires a timeout $>$ 0 before it can be run. It will read until a timeout occurs and return a list of strings.
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & A maximum length of combined lines, defaults to 65536 (2$^\wedge$16)\\
+\hline
+{\em eol} & A string to match against for the E\+OL.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A vector$<$string$>$ containing the lines. 
+\end{DoxyReturn}
+\index{serial\+::\+Serial@{serial\+::\+Serial}!send\+Break@{send\+Break}}
+\index{send\+Break@{send\+Break}!serial\+::\+Serial@{serial\+::\+Serial}}
+\subsubsection[{\texorpdfstring{send\+Break(int duration)}{sendBreak(int duration)}}]{\setlength{\rightskip}{0pt plus 5cm}void serial\+::\+Serial\+::send\+Break (
+\begin{DoxyParamCaption}
+\item[{int}]{duration}
+\end{DoxyParamCaption}
+)}\hypertarget{classserial_1_1_serial_ab35e474beb136258cbeb04978be27455}{}\label{classserial_1_1_serial_ab35e474beb136258cbeb04978be27455}
+Sends the R\+S-\/232 break signal. See tcsendbreak(3). \index{serial\+::\+Serial@{serial\+::\+Serial}!set\+Baudrate@{set\+Baudrate}}
+\index{set\+Baudrate@{set\+Baudrate}!serial\+::\+Serial@{serial\+::\+Serial}}
+\subsubsection[{\texorpdfstring{set\+Baudrate(uint32\+\_\+t baudrate)}{setBaudrate(uint32_t baudrate)}}]{\setlength{\rightskip}{0pt plus 5cm}bool serial\+::\+Serial\+::set\+Baudrate (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{baudrate}
+\end{DoxyParamCaption}
+)}\hypertarget{classserial_1_1_serial_a05085fc22adee665698bdfd9b7b9783f}{}\label{classserial_1_1_serial_a05085fc22adee665698bdfd9b7b9783f}
+Sets the baudrate for the serial port.
+
+Possible baudrates depends on the system but some safe baudrates include\+: 110, 300, 600, 1200, 2400, 4800, 9600, 14400, 19200, 28800, 38400, 56000, 57600, 115200 Some other baudrates that are supported by some comports\+: 128000, 153600, 230400, 256000, 460800, 921600
+
+
+\begin{DoxyParams}{Parameters}
+{\em baudrate} & An integer that sets the baud rate for the serial port. \\
+\hline
+\end{DoxyParams}
+\index{serial\+::\+Serial@{serial\+::\+Serial}!set\+Break@{set\+Break}}
+\index{set\+Break@{set\+Break}!serial\+::\+Serial@{serial\+::\+Serial}}
+\subsubsection[{\texorpdfstring{set\+Break(bool level=true)}{setBreak(bool level=true)}}]{\setlength{\rightskip}{0pt plus 5cm}bool serial\+::\+Serial\+::set\+Break (
+\begin{DoxyParamCaption}
+\item[{bool}]{level = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}\hypertarget{classserial_1_1_serial_abb7eef9db06c582e2e504733b4150968}{}\label{classserial_1_1_serial_abb7eef9db06c582e2e504733b4150968}
+Set the break condition to a given level. Defaults to true. \index{serial\+::\+Serial@{serial\+::\+Serial}!set\+Bytesize@{set\+Bytesize}}
+\index{set\+Bytesize@{set\+Bytesize}!serial\+::\+Serial@{serial\+::\+Serial}}
+\subsubsection[{\texorpdfstring{set\+Bytesize(bytesize\+\_\+t bytesize)}{setBytesize(bytesize_t bytesize)}}]{\setlength{\rightskip}{0pt plus 5cm}bool serial\+::\+Serial\+::set\+Bytesize (
+\begin{DoxyParamCaption}
+\item[{{\bf bytesize\+\_\+t}}]{bytesize}
+\end{DoxyParamCaption}
+)}\hypertarget{classserial_1_1_serial_a8adf3dcd68fb1b85ce30c8b443e5868a}{}\label{classserial_1_1_serial_a8adf3dcd68fb1b85ce30c8b443e5868a}
+Sets the bytesize for the serial port.
+
+
+\begin{DoxyParams}{Parameters}
+{\em bytesize} & Size of each byte in the serial transmission of data, default is eightbits, possible values are\+: fivebits, sixbits, sevenbits, eightbits\\
+\hline
+\end{DoxyParams}
+\textbackslash{} \index{serial\+::\+Serial@{serial\+::\+Serial}!set\+D\+TR@{set\+D\+TR}}
+\index{set\+D\+TR@{set\+D\+TR}!serial\+::\+Serial@{serial\+::\+Serial}}
+\subsubsection[{\texorpdfstring{set\+D\+T\+R(bool level=true)}{setDTR(bool level=true)}}]{\setlength{\rightskip}{0pt plus 5cm}bool serial\+::\+Serial\+::set\+D\+TR (
+\begin{DoxyParamCaption}
+\item[{bool}]{level = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}\hypertarget{classserial_1_1_serial_a4c8a44a1e6ce42f8cb521d9a4e10bc59}{}\label{classserial_1_1_serial_a4c8a44a1e6ce42f8cb521d9a4e10bc59}
+Set the D\+TR handshaking line to the given level. Defaults to true. \index{serial\+::\+Serial@{serial\+::\+Serial}!set\+Flowcontrol@{set\+Flowcontrol}}
+\index{set\+Flowcontrol@{set\+Flowcontrol}!serial\+::\+Serial@{serial\+::\+Serial}}
+\subsubsection[{\texorpdfstring{set\+Flowcontrol(flowcontrol\+\_\+t flowcontrol)}{setFlowcontrol(flowcontrol_t flowcontrol)}}]{\setlength{\rightskip}{0pt plus 5cm}bool serial\+::\+Serial\+::set\+Flowcontrol (
+\begin{DoxyParamCaption}
+\item[{{\bf flowcontrol\+\_\+t}}]{flowcontrol}
+\end{DoxyParamCaption}
+)}\hypertarget{classserial_1_1_serial_a76e56ce22e2706b8954a1dc9c5188c92}{}\label{classserial_1_1_serial_a76e56ce22e2706b8954a1dc9c5188c92}
+Sets the flow control for the serial port.
+
+
+\begin{DoxyParams}{Parameters}
+{\em flowcontrol} & Type of flowcontrol used, default is flowcontrol\+\_\+none, possible values are\+: flowcontrol\+\_\+none, flowcontrol\+\_\+software, flowcontrol\+\_\+hardware\\
+\hline
+\end{DoxyParams}
+\textbackslash{} \index{serial\+::\+Serial@{serial\+::\+Serial}!set\+Parity@{set\+Parity}}
+\index{set\+Parity@{set\+Parity}!serial\+::\+Serial@{serial\+::\+Serial}}
+\subsubsection[{\texorpdfstring{set\+Parity(parity\+\_\+t parity)}{setParity(parity_t parity)}}]{\setlength{\rightskip}{0pt plus 5cm}bool serial\+::\+Serial\+::set\+Parity (
+\begin{DoxyParamCaption}
+\item[{{\bf parity\+\_\+t}}]{parity}
+\end{DoxyParamCaption}
+)}\hypertarget{classserial_1_1_serial_af471db5d3a89128430e7e3c5389cd08a}{}\label{classserial_1_1_serial_af471db5d3a89128430e7e3c5389cd08a}
+Sets the parity for the serial port.
+
+
+\begin{DoxyParams}{Parameters}
+{\em parity} & Method of parity, default is parity\+\_\+none, possible values are\+: parity\+\_\+none, parity\+\_\+odd, parity\+\_\+even\\
+\hline
+\end{DoxyParams}
+\textbackslash{} \index{serial\+::\+Serial@{serial\+::\+Serial}!set\+Port@{set\+Port}}
+\index{set\+Port@{set\+Port}!serial\+::\+Serial@{serial\+::\+Serial}}
+\subsubsection[{\texorpdfstring{set\+Port(const std\+::string \&port)}{setPort(const std::string &port)}}]{\setlength{\rightskip}{0pt plus 5cm}void serial\+::\+Serial\+::set\+Port (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{port}
+\end{DoxyParamCaption}
+)}\hypertarget{classserial_1_1_serial_a127104a1b211c46e4cad9002123e6ea8}{}\label{classserial_1_1_serial_a127104a1b211c46e4cad9002123e6ea8}
+Sets the serial port identifier.
+
+
+\begin{DoxyParams}{Parameters}
+{\em port} & A const std\+::string reference containing the address of the serial port, which would be something like \textquotesingle{}C\+O\+M1\textquotesingle{} on Windows and \textquotesingle{}/dev/tty\+S0\textquotesingle{} on Linux.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::invalid\+\_\+argument} & \\
+\hline
+\end{DoxyExceptions}
+\index{serial\+::\+Serial@{serial\+::\+Serial}!set\+R\+TS@{set\+R\+TS}}
+\index{set\+R\+TS@{set\+R\+TS}!serial\+::\+Serial@{serial\+::\+Serial}}
+\subsubsection[{\texorpdfstring{set\+R\+T\+S(bool level=true)}{setRTS(bool level=true)}}]{\setlength{\rightskip}{0pt plus 5cm}bool serial\+::\+Serial\+::set\+R\+TS (
+\begin{DoxyParamCaption}
+\item[{bool}]{level = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}\hypertarget{classserial_1_1_serial_a7c91f22768107389f52d80d691994fc7}{}\label{classserial_1_1_serial_a7c91f22768107389f52d80d691994fc7}
+Set the R\+TS handshaking line to the given level. Defaults to true. \index{serial\+::\+Serial@{serial\+::\+Serial}!set\+Stopbits@{set\+Stopbits}}
+\index{set\+Stopbits@{set\+Stopbits}!serial\+::\+Serial@{serial\+::\+Serial}}
+\subsubsection[{\texorpdfstring{set\+Stopbits(stopbits\+\_\+t stopbits)}{setStopbits(stopbits_t stopbits)}}]{\setlength{\rightskip}{0pt plus 5cm}bool serial\+::\+Serial\+::set\+Stopbits (
+\begin{DoxyParamCaption}
+\item[{{\bf stopbits\+\_\+t}}]{stopbits}
+\end{DoxyParamCaption}
+)}\hypertarget{classserial_1_1_serial_a0c690a31516cd11c521ba3aff4bafc4e}{}\label{classserial_1_1_serial_a0c690a31516cd11c521ba3aff4bafc4e}
+Sets the stopbits for the serial port.
+
+
+\begin{DoxyParams}{Parameters}
+{\em stopbits} & Number of stop bits used, default is stopbits\+\_\+one, possible values are\+: stopbits\+\_\+one, stopbits\+\_\+one\+\_\+point\+\_\+five, stopbits\+\_\+two\\
+\hline
+\end{DoxyParams}
+\textbackslash{} \index{serial\+::\+Serial@{serial\+::\+Serial}!set\+Timeout@{set\+Timeout}}
+\index{set\+Timeout@{set\+Timeout}!serial\+::\+Serial@{serial\+::\+Serial}}
+\subsubsection[{\texorpdfstring{set\+Timeout(\+Timeout \&timeout)}{setTimeout(Timeout &timeout)}}]{\setlength{\rightskip}{0pt plus 5cm}void serial\+::\+Serial\+::set\+Timeout (
+\begin{DoxyParamCaption}
+\item[{{\bf serial\+::\+Timeout} \&}]{timeout}
+\end{DoxyParamCaption}
+)}\hypertarget{classserial_1_1_serial_a5b1a4e05b1690d29ba1ae14a9079434c}{}\label{classserial_1_1_serial_a5b1a4e05b1690d29ba1ae14a9079434c}
+Sets the timeout for reads and writes using the \hyperlink{structserial_1_1_timeout}{Timeout} struct.
+
+There are two timeout conditions described here\+:
+\begin{DoxyItemize}
+\item The inter byte timeout\+:
+\begin{DoxyItemize}
+\item The inter\+\_\+byte\+\_\+timeout component of \hyperlink{structserial_1_1_timeout}{serial\+::\+Timeout} defines the maximum amount of time, in milliseconds, between receiving bytes on the serial port that can pass before a timeout occurs. Setting this to zero will prevent inter byte timeouts from occurring.
+\end{DoxyItemize}
+\item Total time timeout\+:
+\begin{DoxyItemize}
+\item The constant and multiplier component of this timeout condition, for both read and write, are defined in \hyperlink{structserial_1_1_timeout}{serial\+::\+Timeout}. This timeout occurs if the total time since the read or write call was made exceeds the specified time in milliseconds.
+\item The limit is defined by multiplying the multiplier component by the number of requested bytes and adding that product to the constant component. In this way if you want a read call, for example, to timeout after exactly one second regardless of the number of bytes you asked for then set the read\+\_\+timeout\+\_\+constant component of \hyperlink{structserial_1_1_timeout}{serial\+::\+Timeout} to 1000 and the read\+\_\+timeout\+\_\+multiplier to zero. This timeout condition can be used in conjunction with the inter byte timeout condition with out any problems, timeout will simply occur when one of the two timeout conditions is met. This allows users to have maximum control over the trade-\/off between responsiveness and efficiency.
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+Read and write functions will return in one of three cases. When the reading or writing is complete, when a timeout occurs, or when an exception occurs.
+
+A timeout of 0 enables non-\/blocking mode.
+
+
+\begin{DoxyParams}{Parameters}
+{\em timeout} & A \hyperlink{structserial_1_1_timeout}{serial\+::\+Timeout} struct containing the inter byte timeout, and the read and write timeout constants and multipliers.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{structserial_1_1_timeout}{serial\+::\+Timeout} 
+\end{DoxySeeAlso}
+\index{serial\+::\+Serial@{serial\+::\+Serial}!set\+Timeout@{set\+Timeout}}
+\index{set\+Timeout@{set\+Timeout}!serial\+::\+Serial@{serial\+::\+Serial}}
+\subsubsection[{\texorpdfstring{set\+Timeout(uint32\+\_\+t inter\+\_\+byte\+\_\+timeout, uint32\+\_\+t read\+\_\+timeout\+\_\+constant, uint32\+\_\+t read\+\_\+timeout\+\_\+multiplier, uint32\+\_\+t write\+\_\+timeout\+\_\+constant, uint32\+\_\+t write\+\_\+timeout\+\_\+multiplier)}{setTimeout(uint32_t inter_byte_timeout, uint32_t read_timeout_constant, uint32_t read_timeout_multiplier, uint32_t write_timeout_constant, uint32_t write_timeout_multiplier)}}]{\setlength{\rightskip}{0pt plus 5cm}void serial\+::\+Serial\+::set\+Timeout (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{inter\+\_\+byte\+\_\+timeout, }
+\item[{uint32\+\_\+t}]{read\+\_\+timeout\+\_\+constant, }
+\item[{uint32\+\_\+t}]{read\+\_\+timeout\+\_\+multiplier, }
+\item[{uint32\+\_\+t}]{write\+\_\+timeout\+\_\+constant, }
+\item[{uint32\+\_\+t}]{write\+\_\+timeout\+\_\+multiplier}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classserial_1_1_serial_a4b4be39af3e1c68bc6ac09cb55788c86}{}\label{classserial_1_1_serial_a4b4be39af3e1c68bc6ac09cb55788c86}
+Sets the timeout for reads and writes. \index{serial\+::\+Serial@{serial\+::\+Serial}!wait\+Byte\+Times@{wait\+Byte\+Times}}
+\index{wait\+Byte\+Times@{wait\+Byte\+Times}!serial\+::\+Serial@{serial\+::\+Serial}}
+\subsubsection[{\texorpdfstring{wait\+Byte\+Times(size\+\_\+t count)}{waitByteTimes(size_t count)}}]{\setlength{\rightskip}{0pt plus 5cm}void serial\+::\+Serial\+::wait\+Byte\+Times (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{count}
+\end{DoxyParamCaption}
+)}\hypertarget{classserial_1_1_serial_a35c0f6ff20c142a5210dde288731f954}{}\label{classserial_1_1_serial_a35c0f6ff20c142a5210dde288731f954}
+Block for a period of time corresponding to the transmission time of count characters at present serial settings. This may be used in con-\/ junction with wait\+Readable to read larger blocks of data from the port. \index{serial\+::\+Serial@{serial\+::\+Serial}!wait\+For\+Change@{wait\+For\+Change}}
+\index{wait\+For\+Change@{wait\+For\+Change}!serial\+::\+Serial@{serial\+::\+Serial}}
+\subsubsection[{\texorpdfstring{wait\+For\+Change()}{waitForChange()}}]{\setlength{\rightskip}{0pt plus 5cm}bool serial\+::\+Serial\+::wait\+For\+Change (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classserial_1_1_serial_a9d889dc0ec2cec50a620650f10cf8e83}{}\label{classserial_1_1_serial_a9d889dc0ec2cec50a620650f10cf8e83}
+Blocks until C\+TS, D\+SR, RI, CD changes or something interrupts it.
+
+Can throw an exception if an error occurs while waiting. You can check the status of C\+TS, D\+SR, RI, and CD once this returns. Uses T\+I\+O\+C\+M\+I\+W\+A\+IT via ioctl if available (mostly only on Linux) with a resolution of less than +-\/1ms and as good as +-\/0.2ms. Otherwise a polling method is used which can give +-\/2ms.
+
+\begin{DoxyReturn}{Returns}
+Returns true if one of the lines changed, false if something else occurred. 
+\end{DoxyReturn}
+\index{serial\+::\+Serial@{serial\+::\+Serial}!wait\+Readable@{wait\+Readable}}
+\index{wait\+Readable@{wait\+Readable}!serial\+::\+Serial@{serial\+::\+Serial}}
+\subsubsection[{\texorpdfstring{wait\+Readable()}{waitReadable()}}]{\setlength{\rightskip}{0pt plus 5cm}bool serial\+::\+Serial\+::wait\+Readable (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classserial_1_1_serial_a59bd8d40309769e8eed91dd3684e0000}{}\label{classserial_1_1_serial_a59bd8d40309769e8eed91dd3684e0000}
+Block until there is serial data to read or read\+\_\+timeout\+\_\+constant number of milliseconds have elapsed. The return value is true when the function exits with the port in a readable state, false otherwise (due to timeout or select interruption). \index{serial\+::\+Serial@{serial\+::\+Serial}!write@{write}}
+\index{write@{write}!serial\+::\+Serial@{serial\+::\+Serial}}
+\subsubsection[{\texorpdfstring{write(const uint8\+\_\+t $\ast$data, size\+\_\+t size)}{write(const uint8_t *data, size_t size)}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t serial\+::\+Serial\+::write (
+\begin{DoxyParamCaption}
+\item[{const uint8\+\_\+t $\ast$}]{data, }
+\item[{size\+\_\+t}]{size}
+\end{DoxyParamCaption}
+)}\hypertarget{classserial_1_1_serial_a3275e8456850998c0ac46b2768ab9258}{}\label{classserial_1_1_serial_a3275e8456850998c0ac46b2768ab9258}
+Write a string to the serial port.
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & A const reference containing the data to be written to the serial port.\\
+\hline
+{\em size} & A size\+\_\+t that indicates how many bytes should be written from the given data buffer.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A size\+\_\+t representing the number of bytes actually written to the serial port.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em serial\+::\+Port\+Not\+Opened\+Exception} & \\
+\hline
+{\em serial\+::\+Serial\+Exception} & \\
+\hline
+{\em serial\+::\+I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\index{serial\+::\+Serial@{serial\+::\+Serial}!write@{write}}
+\index{write@{write}!serial\+::\+Serial@{serial\+::\+Serial}}
+\subsubsection[{\texorpdfstring{write(const std\+::vector$<$ uint8\+\_\+t $>$ \&data)}{write(const std::vector< uint8_t > &data)}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t serial\+::\+Serial\+::write (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ uint8\+\_\+t $>$ \&}]{data}
+\end{DoxyParamCaption}
+)}\hypertarget{classserial_1_1_serial_a9c2827088d82ee82f245ffa106fa7d10}{}\label{classserial_1_1_serial_a9c2827088d82ee82f245ffa106fa7d10}
+Write a string to the serial port.
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & A const reference containing the data to be written to the serial port.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A size\+\_\+t representing the number of bytes actually written to the serial port. 
+\end{DoxyReturn}
+\index{serial\+::\+Serial@{serial\+::\+Serial}!write@{write}}
+\index{write@{write}!serial\+::\+Serial@{serial\+::\+Serial}}
+\subsubsection[{\texorpdfstring{write(const std\+::string \&data)}{write(const std::string &data)}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t serial\+::\+Serial\+::write (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{data}
+\end{DoxyParamCaption}
+)}\hypertarget{classserial_1_1_serial_a7c92c0307b86a935f6623953eec66460}{}\label{classserial_1_1_serial_a7c92c0307b86a935f6623953eec66460}
+Write a string to the serial port.
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & A const reference containing the data to be written to the serial port.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A size\+\_\+t representing the number of bytes actually written to the serial port. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/yang/tmp/sdk/include/serial.\+h\item 
+/home/yang/tmp/sdk/src/serial.\+cpp\end{DoxyCompactItemize}

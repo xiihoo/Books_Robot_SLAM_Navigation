@@ -1,0 +1,54 @@
+<package>
+    <name>dwa_local_planner</name>
+    <version>1.14.4</version>
+    <description>
+
+        This package provides an implementation of the Dynamic Window Approach to
+        local robot navigation on a plane. Given a global plan to follow and a
+        costmap, the local planner produces velocity commands to send to a mobile
+        base. This package supports any robot who's footprint can be represented as
+        a convex polygon or cicrle, and exposes its configuration as ROS parameters
+        that can be set in a launch file. The parameters for this planner are also
+        dynamically reconfigurable. This package's ROS wrapper adheres to the
+        BaseLocalPlanner interface specified in the <a href="http://wiki.ros.org/nav_core">nav_core</a> package.
+
+    </description>
+    <author>Eitan Marder-Eppstein</author>
+    <author>contradict@gmail.com</author>
+    <maintainer email="davidvlu@gmail.com">David V. Lu!!</maintainer>
+    <maintainer email="mfergs7@gmail.com">Michael Ferguson</maintainer>
+    <maintainer email="ahoy@fetchrobotics.com">Aaron Hoy</maintainer>
+    <license>BSD</license>
+    <url>http://wiki.ros.org/dwa_local_planner</url>
+
+    <buildtool_depend>catkin</buildtool_depend>
+
+    <build_depend>base_local_planner</build_depend>
+    <build_depend>cmake_modules</build_depend>
+    <build_depend>costmap_2d</build_depend>
+    <build_depend>dynamic_reconfigure</build_depend>
+    <build_depend>eigen</build_depend>
+    <build_depend>nav_core</build_depend>
+    <build_depend>nav_msgs</build_depend>
+    <build_depend>pluginlib</build_depend>
+    <build_depend>pcl_conversions</build_depend>
+    <build_depend>roscpp</build_depend>
+    <build_depend>tf</build_depend>
+
+    <run_depend>base_local_planner</run_depend>
+    <run_depend>costmap_2d</run_depend>
+    <run_depend>dynamic_reconfigure</run_depend>
+    <run_depend>eigen</run_depend>
+    <run_depend>nav_core</run_depend>
+    <run_depend>nav_msgs</run_depend>
+    <run_depend>pluginlib</run_depend>
+    <run_depend>roscpp</run_depend>
+    <run_depend>tf</run_depend>
+
+    <export>
+        <nav_core plugin="${prefix}/blp_plugin.xml" />
+    </export>
+
+</package>
+
+

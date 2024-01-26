@@ -1,0 +1,111 @@
+TebLocalPlannerROS:
+
+ odom_topic: odom
+ map_frame: map #default:odom, map if in case of a static map
+
+ #################Trajectory#####################
+ teb_autosize: True #default:True
+ dt_ref: 0.3 #default:0.3
+ dt_hysteresis: 0.1 #default:0.1
+ #min_samples: 3 #default:3
+ #max_samples: 500 #default:500
+ global_plan_overwrite_orientation: True #default:True
+ allow_init_with_backwards_motion: False #default:False
+ #global_plan_via_point_sep: -1 #default:-1
+ #via_points_ordered: False #default:False
+ max_global_plan_lookahead_dist: 3.0 #default:3.0
+ #exact_arc_length: False #default:False
+ #force_reinit_new_goal_dist: 1.0 #default:1.0
+ feasibility_check_no_poses: 5 #default:5
+ #publish_feedback: Flase #default:False
+
+ #################Robot##########################
+ max_vel_x: 0.30 #default:0.4
+ max_vel_x_backwards: 0.00 #default:0.05
+ max_vel_y: 0.0 #default:0.0
+ max_vel_theta: 1.2 #default:1.0
+ acc_lim_x: 0.5 #default:0.5
+ #acc_lim_y: 0.5 #default:0.5
+ acc_lim_theta: 1.0 #default:0.5
+ #min_turning_radius: 0.0 #default:0.0,only for carlike robots
+ #wheelbase: 1.0 #default:1.0,only required if cmd_angle_instead_rotvel=true
+ #cmd_angle_instead_rotvel: False #default:False
+ #is_footprint_dynamic: False #default:False
+ footprint_model:
+   type: "point"
+ ################GoalTolerance####################
+ xy_goal_tolerance: 0.2 #default:0.2
+ yaw_goal_tolerance: 0.2 #default:0.2
+ free_goal_vel: False #default:False
+
+ ################Obstacles########################
+ min_obstacle_dist: 0.36 #footprint_model/type=point
+ inflation_dist: 0.38 #default:0.35 
+ dynamic_obstacle_inflation_dist: 0.40 #default:0.6 
+ #include_dynamic_obstacles: True #default:True
+ include_costmap_obstacles: True #default:True
+ costmap_obstacles_behind_robot_dist: 1.5 #default:1.5
+ obstacle_poses_affected: 30 #default:30
+ #legacy_obstacle_association: False #default:False
+ #obstacle_association_force_inclusion_factor: 1.5 #default:1.5,used only if legacy_obstacle_association=false
+ #obstacle_association_cutoff_factor: 5 #default:5 ,used only if legacy_obstacle_association=false
+ costmap_converter_plugin: "" #default:""
+ costmap_converter_spin_thread: True #default:True
+ costmap_converter_rate: 5.0 #default:5.0
+
+ #################Optimization####################
+ no_inner_iterations: 2 #default:5
+ no_outer_iterations: 1 #default:4
+ optimization_activate: True #default:True
+ optimization_verbose: False #default:False
+ penalty_epsilon: 0.001 #default:0.1
+ weight_max_vel_x: 100 #default:2
+ #weight_max_vel_y: 2 #default:2
+ weight_max_vel_theta: 100 #default:1
+ weight_acc_lim_x: 1 #default:1
+ #weight_acc_lim_y: 1 #default:1
+ weight_acc_lim_theta: 1 #default:1
+ weight_kinematics_nh: 1000 #default:1000
+ weight_kinematics_forward_drive: 1000 #default:1
+ weight_kinematics_turning_radius: 1 #default:1
+ weight_optimaltime: 1 #default:1
+ weight_obstacle: 300 #default:50
+ #weight_inflation: 0.1 #default:0.1
+ #weight_dynamic_obstacle: 50 #default:50
+ #weight_dynamic_obstacle_inflation: 0.1 #default:0.1
+ weight_viapoint: 1 #default:1
+ #weight_prefer_rotdir: 50 #default:50
+ weight_adapt_factor: 2.0 #default:2.0
+
+ ################Homotopy Class Planner############
+ enable_homotopy_class_planning: false #default:True
+ enable_multithreading: True #default:True
+ simple_exploration: False #default:False
+ max_number_classes: 4 #default:4,Restrict the number of alternative trajectories that are subject to optimization. Often 2 alternatives are sufficient (avoid obstacle on the left or right side).
+ selection_cost_hysteresis: 1.0 #default:1.0
+ #selection_prefer_initial_plan: 0.95 #default:0.95
+ selection_obst_cost_scale: 100.0 #default:100.0
+ #selection_viapoint_cost_scale: 1.0 #default:1.0
+ selection_alternative_time_cost: False #default:False
+
+ obstacle_keypoint_offset: 0.1 #default:0.1
+ obstacle_heading_threshold: 0.45 #default:0.45
+ roadmap_graph_no_samples: 15 #default:15
+ roadmap_graph_area_width: 5 #default:6
+ roadmap_graph_area_length_scale: 1.0 #default:1.0
+ h_signature_prescaler: 0.5 #default:1.0 
+ h_signature_threshold: 0.1 #default:0.1
+
+ #viapoints_all_candidates: True #default:True
+
+ visualize_hc_graph: False #default:False
+ visualize_with_time_as_z_axis_scale: 0.0 #default:0.0
+
+ ###############Recovery##########################
+ #shrink_horizon_backup: True #default:True
+ #shrink_horizon_min_duration: 10 #default:10
+ #oscillation_recovery: True #default:True
+ #oscillation_v_eps: 0.1 #default:0.1
+ #oscillation_omega_eps: 0.1 #default:0.1
+ #oscillation_recovery_min_duration: 10 #default:10
+ #oscillation_filter_duration: 10 #default:10

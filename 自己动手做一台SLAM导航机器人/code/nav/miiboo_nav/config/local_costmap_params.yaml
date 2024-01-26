@@ -1,0 +1,28 @@
+local_costmap:
+   #Coordinate frame and tf parameters
+   global_frame: /odom #default:/odom
+   robot_base_frame: /base_footprint #default:/base_link
+   transform_tolerance: 2.0 #default:0.2
+
+   #Rate parameters
+   update_frequency: 5.0 #default:5.0
+   publish_frequency: 5.0 #default:5.0
+
+   #map params
+   static_map: false
+   rolling_window: true
+   width: 4.0 #default:6.0
+   height: 4.0 #default:6.0
+   resolution: 0.05 #default:0.05
+   #origin_x: 0.0 #default:0.0
+   #origin_y: 0.0 #default:0.0
+   
+   #robot model
+   inscribed_radius: 0.22 #default:0.325
+   circumscribed_radius: 0.22 #default:0.46
+   
+
+   plugins:
+      #- {name: sonar_layer,   type: "range_sensor_layer::RangeSensorLayer"}
+      - {name: obstacle_layer, type: "costmap_2d::ObstacleLayer"}
+      - {name: local_inflation_layer, type: "costmap_2d::InflationLayer"}

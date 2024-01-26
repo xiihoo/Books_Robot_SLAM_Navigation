@@ -1,0 +1,3 @@
+<launch>
+    <node name="broadcast_ip_node" pkg="broadcast_ip" type="broadcast_udp" output="screen"/>
+</launch>

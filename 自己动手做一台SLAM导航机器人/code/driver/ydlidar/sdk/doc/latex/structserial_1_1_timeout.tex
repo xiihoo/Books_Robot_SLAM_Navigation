@@ -1,0 +1,81 @@
+\hypertarget{structserial_1_1_timeout}{}\section{serial\+:\+:Timeout Struct Reference}
+\label{structserial_1_1_timeout}\index{serial\+::\+Timeout@{serial\+::\+Timeout}}
+
+
+{\ttfamily \#include $<$serial.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Timeout} (uint32\+\_\+t inter\+\_\+byte\+\_\+timeout\+\_\+=0, uint32\+\_\+t read\+\_\+timeout\+\_\+constant\+\_\+=0, uint32\+\_\+t read\+\_\+timeout\+\_\+multiplier\+\_\+=0, uint32\+\_\+t write\+\_\+timeout\+\_\+constant\+\_\+=0, uint32\+\_\+t write\+\_\+timeout\+\_\+multiplier\+\_\+=0)\hypertarget{structserial_1_1_timeout_a1a454b17f5d653b8e1b04b3ec2fead59}{}\label{structserial_1_1_timeout_a1a454b17f5d653b8e1b04b3ec2fead59}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static uint32\+\_\+t {\bfseries max} ()\hypertarget{structserial_1_1_timeout_adc68e33d2f94bfa33ba1062c363b9151}{}\label{structserial_1_1_timeout_adc68e33d2f94bfa33ba1062c363b9151}
+
+\item 
+static \hyperlink{structserial_1_1_timeout}{Timeout} \hyperlink{structserial_1_1_timeout_aa4fbd72e16f47c9aea9fb3c32ca17828}{simple\+Timeout} (uint32\+\_\+t timeout)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \hyperlink{structserial_1_1_timeout_ada15f2a0ae478cbb62ef79d1633b2b81}{inter\+\_\+byte\+\_\+timeout}
+\item 
+uint32\+\_\+t \hyperlink{structserial_1_1_timeout_a099244649dec66b6e0548480edeb2b9f}{read\+\_\+timeout\+\_\+constant}
+\item 
+uint32\+\_\+t \hyperlink{structserial_1_1_timeout_a64412753eb2edf1621716dd9f1a4e71e}{read\+\_\+timeout\+\_\+multiplier}
+\item 
+uint32\+\_\+t \hyperlink{structserial_1_1_timeout_accf01b97f83564f4ce3d6e5f63e21006}{write\+\_\+timeout\+\_\+constant}
+\item 
+uint32\+\_\+t \hyperlink{structserial_1_1_timeout_a31ddae32907cff9c3d27fa763981317d}{write\+\_\+timeout\+\_\+multiplier}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Structure for setting the timeout of the serial port, times are in milliseconds.
+
+In order to disable the interbyte timeout, set it to Timeout\+::max(). 
+
+\subsection{Member Function Documentation}
+\index{serial\+::\+Timeout@{serial\+::\+Timeout}!simple\+Timeout@{simple\+Timeout}}
+\index{simple\+Timeout@{simple\+Timeout}!serial\+::\+Timeout@{serial\+::\+Timeout}}
+\subsubsection[{\texorpdfstring{simple\+Timeout(uint32\+\_\+t timeout)}{simpleTimeout(uint32_t timeout)}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Timeout} serial\+::\+Timeout\+::simple\+Timeout (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{timeout}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{structserial_1_1_timeout_aa4fbd72e16f47c9aea9fb3c32ca17828}{}\label{structserial_1_1_timeout_aa4fbd72e16f47c9aea9fb3c32ca17828}
+Convenience function to generate \hyperlink{structserial_1_1_timeout}{Timeout} structs using a single absolute timeout.
+
+
+\begin{DoxyParams}{Parameters}
+{\em timeout} & A long that defines the time in milliseconds until a timeout occurs after a call to read or write is made.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{structserial_1_1_timeout}{Timeout} struct that represents this simple timeout provided. 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\index{serial\+::\+Timeout@{serial\+::\+Timeout}!inter\+\_\+byte\+\_\+timeout@{inter\+\_\+byte\+\_\+timeout}}
+\index{inter\+\_\+byte\+\_\+timeout@{inter\+\_\+byte\+\_\+timeout}!serial\+::\+Timeout@{serial\+::\+Timeout}}
+\subsubsection[{\texorpdfstring{inter\+\_\+byte\+\_\+timeout}{inter_byte_timeout}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t serial\+::\+Timeout\+::inter\+\_\+byte\+\_\+timeout}\hypertarget{structserial_1_1_timeout_ada15f2a0ae478cbb62ef79d1633b2b81}{}\label{structserial_1_1_timeout_ada15f2a0ae478cbb62ef79d1633b2b81}
+Number of milliseconds between bytes received to timeout on. \index{serial\+::\+Timeout@{serial\+::\+Timeout}!read\+\_\+timeout\+\_\+constant@{read\+\_\+timeout\+\_\+constant}}
+\index{read\+\_\+timeout\+\_\+constant@{read\+\_\+timeout\+\_\+constant}!serial\+::\+Timeout@{serial\+::\+Timeout}}
+\subsubsection[{\texorpdfstring{read\+\_\+timeout\+\_\+constant}{read_timeout_constant}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t serial\+::\+Timeout\+::read\+\_\+timeout\+\_\+constant}\hypertarget{structserial_1_1_timeout_a099244649dec66b6e0548480edeb2b9f}{}\label{structserial_1_1_timeout_a099244649dec66b6e0548480edeb2b9f}
+A constant number of milliseconds to wait after calling read. \index{serial\+::\+Timeout@{serial\+::\+Timeout}!read\+\_\+timeout\+\_\+multiplier@{read\+\_\+timeout\+\_\+multiplier}}
+\index{read\+\_\+timeout\+\_\+multiplier@{read\+\_\+timeout\+\_\+multiplier}!serial\+::\+Timeout@{serial\+::\+Timeout}}
+\subsubsection[{\texorpdfstring{read\+\_\+timeout\+\_\+multiplier}{read_timeout_multiplier}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t serial\+::\+Timeout\+::read\+\_\+timeout\+\_\+multiplier}\hypertarget{structserial_1_1_timeout_a64412753eb2edf1621716dd9f1a4e71e}{}\label{structserial_1_1_timeout_a64412753eb2edf1621716dd9f1a4e71e}
+A multiplier against the number of requested bytes to wait after calling read. \index{serial\+::\+Timeout@{serial\+::\+Timeout}!write\+\_\+timeout\+\_\+constant@{write\+\_\+timeout\+\_\+constant}}
+\index{write\+\_\+timeout\+\_\+constant@{write\+\_\+timeout\+\_\+constant}!serial\+::\+Timeout@{serial\+::\+Timeout}}
+\subsubsection[{\texorpdfstring{write\+\_\+timeout\+\_\+constant}{write_timeout_constant}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t serial\+::\+Timeout\+::write\+\_\+timeout\+\_\+constant}\hypertarget{structserial_1_1_timeout_accf01b97f83564f4ce3d6e5f63e21006}{}\label{structserial_1_1_timeout_accf01b97f83564f4ce3d6e5f63e21006}
+A constant number of milliseconds to wait after calling write. \index{serial\+::\+Timeout@{serial\+::\+Timeout}!write\+\_\+timeout\+\_\+multiplier@{write\+\_\+timeout\+\_\+multiplier}}
+\index{write\+\_\+timeout\+\_\+multiplier@{write\+\_\+timeout\+\_\+multiplier}!serial\+::\+Timeout@{serial\+::\+Timeout}}
+\subsubsection[{\texorpdfstring{write\+\_\+timeout\+\_\+multiplier}{write_timeout_multiplier}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t serial\+::\+Timeout\+::write\+\_\+timeout\+\_\+multiplier}\hypertarget{structserial_1_1_timeout_a31ddae32907cff9c3d27fa763981317d}{}\label{structserial_1_1_timeout_a31ddae32907cff9c3d27fa763981317d}
+A multiplier against the number of requested bytes to wait after calling write. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/yang/tmp/sdk/include/serial.\+h\end{DoxyCompactItemize}

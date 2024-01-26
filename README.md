@@ -1,6 +1,9 @@
-# 《机器人SLAM导航核心技术与实战》张虎 著 （随书配套源码+PPT课件+课后习题答案）
+# 《机器人SLAM导航核心技术与实战》张虎 著 （随书源码+课件+习题答案）
 ## 温馨提示
 * 配套源码中存在一些bug(主要是各种库版本冲突和配置文件方面的兼容问题)的部分代码还未上传，我正在抓紧修复之后会尽快上传，大家有疑问也可以直接联系我。
+* 基于代号为“miiboo”的机器人项目《自己动手做一台SLAM导航机器人》已经完结。而基于新代号“xiihoo”的机器人项目《机器人SLAM导航：核心技术与实战》正是在项目《自己动手做一台SLAM导航机器人》的基础上衍生而来，今后将主要维护这个xiihoo机器人新项目。而关于旧项目miiboo机器人，想了解详情的话请移步如下链接地址：
+  + https://github.com/xiihoo/DIY_A_SLAM_Navigation_Robot
+  + https://gitee.com/xiihoo-robot/DIY_A_SLAM_Navigation_Robot
 ## 关于
 * 作者: （英文名）xiihoo（中文名）张虎（网名）  小虎哥哥爱学习
 * 官网:  http://www.xiihoo.com
@@ -8,36 +11,44 @@
   + QQ技术1群：728661815（1群已满，请加3群）
   + QQ技术2群：117698356（2群已满，请加3群）
   + QQ技术3群：891252940
+* 微信:  robot4xiihoo
+* 微信公众号: 小虎哥哥爱学习
 * 邮箱:  robot4xiihoo@163.com
-* 源码:  https://github.com/xiihoo/Books_Robot_SLAM_Navigation
+* 源码GitHub:  https://github.com/xiihoo/Books_Robot_SLAM_Navigation
+* 源码Gitee(访问更快):  https://gitee.com/xiihoo-robot/Books_Robot_SLAM_Navigation
+* 淘宝:  https://xiihoo.taobao.com
+* B站:   https://space.bilibili.com/66815220
 * 购书链接：https://item.jd.com/13041503.html
 ## 资料汇总下载
 * 百度网盘链接： https://pan.baidu.com/s/1nHbI0mi-iM72NAcQlAU1uQ?pwd=1234
 * 提取码：1234
 ## 图书封面
-![avatar](http://xiihoo.com/static/image/book_front_800x800.jpg)
+![](BOOK1.jpg)
+![](BOOK2.PNG)
 ## 目录
-* <font color=#008000 >序</font>
-* <font color=#008000 >前言</font>
-* <font color=#008000 >编程基础篇</font>
-* 第1章 ROS入门必备知识 2
-* 第2章 C++编程范式 29
-* 第3章 OpenCV图像处理 35
-* <font color=#008000 >硬件基础篇</font>
-* 第4章 机器人传感器 56
-* 第5章 机器人主机 119
-* 第6章 机器人底盘 132
-* <font color=#008000 >SLAM篇</font>
-* 第7章 SLAM中的数学基础 158
-* 第8章 激光SLAM系统 223
-* 第9章 视觉SLAM系统 272
-* 第10章 其他SLAM系统 344
-* <font color=#008000 >自主导航篇</font>
-* 第11章 自主导航中的数学基础 418
-* 第12章 典型自主导航系统 470
-* 第13章 机器人SLAM导航综合实战 502
-* 附录A Linux与SLAM性能优化的探讨 512
-* 附录B 习题 523
+<ul>
+  <li><font color=#008000 >序</font></li>
+  <li><font color=#008000 >前言</font></li>
+  <li><font color=#008000 >编程基础篇</font></li>
+  <li>第1章 ROS入门必备知识 2</li>
+  <li>第2章 C++编程范式 29</li>
+  <li>第3章 OpenCV图像处理 35</li>
+  <li><font color=#008000 >硬件基础篇</font></li>
+  <li>第4章 机器人传感器 56</li>
+  <li>第5章 机器人主机 119</li>
+  <li>第6章 机器人底盘 132</li>
+  <li><font color=#008000 >SLAM篇</font></li>
+  <li>第7章 SLAM中的数学基础 158</li>
+  <li>第8章 激光SLAM系统 223</li>
+  <li>第9章 视觉SLAM系统 272</li>
+  <li>第10章 其他SLAM系统 344</li>
+  <li><font color=#008000 >自主导航篇</font></li>
+  <li>第11章 自主导航中的数学基础 418</li>
+  <li>第12章 典型自主导航系统 470</li>
+  <li>第13章 机器人SLAM导航综合实战 502</li>
+  <li>附录A Linux与SLAM性能优化的探讨 512</li>
+  <li>附录B 习题 523</li>
+</ul>
 
 ## 环境要求
 * ubuntu 18.04 LTS
@@ -90,7 +101,7 @@
   + chapter_13: **机器人SLAM导航综合实战**
     - patrol_fsm 多目标点巡逻
   + 更新中......
-* **2.课件PPT**
+* **2.课件**
   + 0-先导课：课程大纲.pdf
   + 0-先导课：如何安装Ubuntu系统.pdf
   + 0-先导课：SLAM的应用价值与技术难点.pdf
@@ -101,6 +112,7 @@
   + 1-第1季：第4章_机器人传感器.pdf
   + 1-第1季：第5章_机器人主机.pdf
   + 1-第1季：第6章_机器人底盘.pdf
+  + 1-第1季：第7章_SLAM中的数学基础.pdf
   + 更新中......
 * **3.习题答案**
   + 附录B_习题.pdf
@@ -176,4 +188,13 @@
   + <a href="https://www.bilibili.com/video/BV1jS4y1a7Lz?p=54">【第1季】6.1.第6章_机器人底盘_底盘运动学模型-视频讲解</a>
   + <a href="https://www.bilibili.com/video/BV1jS4y1a7Lz?p=55">【第1季】6.2.第6章_机器人底盘_底盘性能指标-视频讲解</a>
   + <a href="https://www.bilibili.com/video/BV1jS4y1a7Lz?p=56">【第1季】6.3.第6章_机器人底盘_典型机器人底盘搭建-视频讲解</a>
+  + <a href="https://www.bilibili.com/video/BV1jS4y1a7Lz?p=57">【第1季】7.第7章_SLAM中的数学基础-视频讲解</a>
+  + <a href="https://www.bilibili.com/video/BV1jS4y1a7Lz?p=58">【第1季】7.1.第7章_SLAM中的数学基础_SLAM发展简史-视频讲解</a>
+  + <a href="https://www.bilibili.com/video/BV1jS4y1a7Lz?p=59">【第1季】7.2.第7章_SLAM中的数学基础_SLAM中的概率理论-视频讲解</a>
+  + <a href="https://www.bilibili.com/video/BV1jS4y1a7Lz?p=60">【第1季】7.3.第7章_SLAM中的数学基础_估计理论-视频讲解</a>
+  + <a href="https://www.bilibili.com/video/BV1jS4y1a7Lz?p=61">【第1季】7.4.第7章_SLAM中的数学基础_基于贝叶斯网络的状态估计-视频讲解</a>
+  + <a href="https://www.bilibili.com/video/BV1jS4y1a7Lz?p=62">【第1季】7.5.第7章_SLAM中的数学基础_基于因子图的状态估计-视频讲解</a>
+  + <a href="https://www.bilibili.com/video/BV1jS4y1a7Lz?p=63">【第1季】7.6.第7章_SLAM中的数学基础_典型SLAM算法-视频讲解</a>
+  + <a href="https://www.bilibili.com/video/BV1jS4y1a7Lz?p=64">【第1季】7.7.第7章_SLAM中的数学基础_SFM、BA和SLAM比较-视频讲解</a>
   + 更多精彩内容，正在更新...
+  

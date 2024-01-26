@@ -1,0 +1,23 @@
+<launch>
+    <node name="miiboo_bringup_node" pkg="miiboo_bringup" type="base_controller" output="screen">
+    <!-- serial_com set-->
+    <param name="com_port" value="/dev/miiboo"/>
+
+    <!-- motor param set -->
+    <param name="speed_ratio"          value="0.000094"/><!-- unit:m/encode -->
+	<param name="wheel_distance"       value="0.202"/><!-- unit:m -->
+        <param name="encode_sampling_time" value="0.04"/><!-- unit:s -->
+
+        <!-- velocity limit -->
+        <param name="cmd_vel_linear_max"   value="1.5"/><!-- unit:m/s -->
+        <param name="cmd_vel_angular_max"  value="2.0"/><!-- unit:rad/s --> 
+
+        <!-- other -->
+        <param name="cmd_vel_topic"                value="cmd_vel"/>
+        <param name="odom_pub_topic"               value="odom"/>
+        <param name="wheel_left_speed_pub_topic"   value="wheel_left_speed"/>
+        <param name="wheel_right_speed_pub_topic"  value="wheel_right_speed"/>
+        <param name="odom_frame_id"                value="odom"/>
+        <param name="odom_child_frame_id"          value="base_footprint"/>
+    </node>
+</launch>

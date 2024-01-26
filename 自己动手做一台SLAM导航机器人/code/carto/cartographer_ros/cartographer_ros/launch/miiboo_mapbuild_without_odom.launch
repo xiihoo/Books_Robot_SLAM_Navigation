@@ -1,0 +1,22 @@
+<launch>
+  <!--param name="robot_description"
+    textfile="$(find cartographer_ros)/urdf/backpack_2d.urdf" /-->
+  <!--node name="robot_state_publisher" pkg="robot_state_publisher"
+    type="robot_state_publisher" /-->
+
+  <node name="cartographer_node" pkg="cartographer_ros"
+      type="cartographer_node" args="
+          -configuration_directory $(find cartographer_ros)/configuration_files
+          -configuration_basename miiboo_mapbuild_without_odom.lua"
+      output="screen">
+    <remap from="scan" to="/scan" />
+    <remap from="imu" to="/imu" />
+    <remap from="odom" to="/odom" />
+  </node>
+
+  <node name="cartographer_occupancy_grid_node" pkg="cartographer_ros"
+      type="cartographer_occupancy_grid_node" args="
+          -resolution 0.01
+          -publish_period_sec 1.0" />
+</launch>
+

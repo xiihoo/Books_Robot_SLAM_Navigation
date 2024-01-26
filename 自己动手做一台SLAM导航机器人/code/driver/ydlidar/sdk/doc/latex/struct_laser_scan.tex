@@ -1,0 +1,46 @@
+\hypertarget{struct_laser_scan}{}\section{Laser\+Scan Struct Reference}
+\label{struct_laser_scan}\index{Laser\+Scan@{Laser\+Scan}}
+
+
+A struct for returning laser readings from the Y\+D\+L\+I\+D\+AR.  
+
+
+
+
+{\ttfamily \#include $<$ydlidar\+\_\+driver.\+h$>$}
+
+
+
+Collaboration diagram for Laser\+Scan\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=149pt]{struct_laser_scan__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ float $>$ \hyperlink{struct_laser_scan_a4d059cb77f0f9f6e558db50c9993f7df}{ranges}\hypertarget{struct_laser_scan_a4d059cb77f0f9f6e558db50c9993f7df}{}\label{struct_laser_scan_a4d059cb77f0f9f6e558db50c9993f7df}
+
+\begin{DoxyCompactList}\small\item\em Array of ranges. \end{DoxyCompactList}\item 
+std\+::vector$<$ float $>$ \hyperlink{struct_laser_scan_a6e68040137d787ef7ef47580d147c503}{intensities}\hypertarget{struct_laser_scan_a6e68040137d787ef7ef47580d147c503}{}\label{struct_laser_scan_a6e68040137d787ef7ef47580d147c503}
+
+\begin{DoxyCompactList}\small\item\em Array of intensities. \end{DoxyCompactList}\item 
+uint64\+\_\+t \hyperlink{struct_laser_scan_ad37e2a54c7eff58cad7576d51916b859}{self\+\_\+time\+\_\+stamp}\hypertarget{struct_laser_scan_ad37e2a54c7eff58cad7576d51916b859}{}\label{struct_laser_scan_ad37e2a54c7eff58cad7576d51916b859}
+
+\begin{DoxyCompactList}\small\item\em Self reported time stamp in nanoseconds. \end{DoxyCompactList}\item 
+uint64\+\_\+t \hyperlink{struct_laser_scan_a1bb6b997ce698fbc516bc20ab3ba3399}{system\+\_\+time\+\_\+stamp}\hypertarget{struct_laser_scan_a1bb6b997ce698fbc516bc20ab3ba3399}{}\label{struct_laser_scan_a1bb6b997ce698fbc516bc20ab3ba3399}
+
+\begin{DoxyCompactList}\small\item\em System time when first range was measured in nanoseconds. \end{DoxyCompactList}\item 
+\hyperlink{struct_laser_config}{Laser\+Config} \hyperlink{struct_laser_scan_a5c7dd0b85432e62cf319f2ad4ec058b4}{config}\hypertarget{struct_laser_scan_a5c7dd0b85432e62cf319f2ad4ec058b4}{}\label{struct_laser_scan_a5c7dd0b85432e62cf319f2ad4ec058b4}
+
+\begin{DoxyCompactList}\small\item\em Configuration of scan. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A struct for returning laser readings from the Y\+D\+L\+I\+D\+AR. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/yang/tmp/sdk/include/ydlidar\+\_\+driver.\+h\end{DoxyCompactItemize}

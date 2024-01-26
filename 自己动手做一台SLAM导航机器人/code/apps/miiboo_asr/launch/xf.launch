@@ -1,0 +1,18 @@
+<launch>
+  <node name = "i_xfiat" pkg = "miiboo_asr" type = "iat_node">
+    <param name="iatTopic" type="str" value="/voice/iat_Pub"/>
+	  <param name="usb_audio_addr" type="str" value="plughw:CameraB409241"/>
+  </node>
+  
+  <node name = "i_qa_nlp" pkg = "miiboo_asr" type = "qa_nlp_node">
+     <param name="iatTopic" type="str" value="/voice/iat_Pub"/>
+	   <param name="ttsTopic" type="str" value="/xfwords"/> 
+	 
+  </node>
+
+  <node name = "i_xf_tts" pkg = "miiboo_asr" type = "tts_node">
+	  <param name="ttsTopic" type="str" value="/xfwords"/>
+	  <param name="aplay_addr" type="str" value="plughw:DAC"/>
+  </node>
+
+</launch>

@@ -1,0 +1,9 @@
+<launch>
+    <node name="calibrate_linear" pkg="miiboo_bringup" type="check_linear.py" output="screen">
+        <param name="test_distance"  value="1.0"/><!-- unit:m -->
+        <param name="speed"          value="0.15"/><!-- unit:m/s -->
+
+	    <param name="base_frame"     value="/base_footprint"/>
+        <param name="odom_frame"     value="/odom"/>
+    </node>
+</launch>

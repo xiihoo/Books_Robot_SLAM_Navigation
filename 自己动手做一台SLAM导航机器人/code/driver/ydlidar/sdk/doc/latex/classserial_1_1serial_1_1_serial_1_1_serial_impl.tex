@@ -1,0 +1,160 @@
+\hypertarget{classserial_1_1serial_1_1_serial_1_1_serial_impl}{}\section{serial\+:\+:Serial\+:\+:Serial\+Impl Class Reference}
+\label{classserial_1_1serial_1_1_serial_1_1_serial_impl}\index{serial\+::\+Serial\+::\+Serial\+Impl@{serial\+::\+Serial\+::\+Serial\+Impl}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Serial\+Impl} (const string \&port, unsigned long baudrate, \hyperlink{namespaceserial_a00b3281fa11cea770c0b0c8a106080f8}{bytesize\+\_\+t} bytesize, \hyperlink{namespaceserial_a8f45d26bf7c9a06659e75b5004a50481}{parity\+\_\+t} parity, \hyperlink{namespaceserial_af5b116611d6628a3aa8f788fdc09f469}{stopbits\+\_\+t} stopbits, \hyperlink{namespaceserial_a93ef57a314b4e562f9eded6c15d34351}{flowcontrol\+\_\+t} flowcontrol)\hypertarget{classserial_1_1serial_1_1_serial_1_1_serial_impl_a1c97cde16ec9282e1fe26764cc2ce4ea}{}\label{classserial_1_1serial_1_1_serial_1_1_serial_impl_a1c97cde16ec9282e1fe26764cc2ce4ea}
+
+\item 
+bool {\bfseries open} ()\hypertarget{classserial_1_1serial_1_1_serial_1_1_serial_impl_a77d836bb85da64fc5a67d980db814cbd}{}\label{classserial_1_1serial_1_1_serial_1_1_serial_impl_a77d836bb85da64fc5a67d980db814cbd}
+
+\item 
+void {\bfseries close} ()\hypertarget{classserial_1_1serial_1_1_serial_1_1_serial_impl_aae71a048817d41c224b0824cd19b40d0}{}\label{classserial_1_1serial_1_1_serial_1_1_serial_impl_aae71a048817d41c224b0824cd19b40d0}
+
+\item 
+bool {\bfseries is\+Open} () const \hypertarget{classserial_1_1serial_1_1_serial_1_1_serial_impl_a1fb0393b7ad279bc70a8b265ea6bc1c2}{}\label{classserial_1_1serial_1_1_serial_1_1_serial_impl_a1fb0393b7ad279bc70a8b265ea6bc1c2}
+
+\item 
+size\+\_\+t {\bfseries available} ()\hypertarget{classserial_1_1serial_1_1_serial_1_1_serial_impl_ad3898b08a53ac00af6f492afc3b00475}{}\label{classserial_1_1serial_1_1_serial_1_1_serial_impl_ad3898b08a53ac00af6f492afc3b00475}
+
+\item 
+bool {\bfseries wait\+Readable} (uint32\+\_\+t timeout)\hypertarget{classserial_1_1serial_1_1_serial_1_1_serial_impl_a4a26fe12f37fd3e54f778181377cd21a}{}\label{classserial_1_1serial_1_1_serial_1_1_serial_impl_a4a26fe12f37fd3e54f778181377cd21a}
+
+\item 
+void {\bfseries wait\+Byte\+Times} (size\+\_\+t count)\hypertarget{classserial_1_1serial_1_1_serial_1_1_serial_impl_acda4ee2cb12938a76b025e53100b32ee}{}\label{classserial_1_1serial_1_1_serial_1_1_serial_impl_acda4ee2cb12938a76b025e53100b32ee}
+
+\item 
+int {\bfseries waitfordata} (size\+\_\+t data\+\_\+count, uint32\+\_\+t timeout, size\+\_\+t $\ast$returned\+\_\+size)\hypertarget{classserial_1_1serial_1_1_serial_1_1_serial_impl_a962c37527625ec7fb63ed74cfe53484f}{}\label{classserial_1_1serial_1_1_serial_1_1_serial_impl_a962c37527625ec7fb63ed74cfe53484f}
+
+\item 
+size\+\_\+t {\bfseries read} (uint8\+\_\+t $\ast$buf, size\+\_\+t size=1)\hypertarget{classserial_1_1serial_1_1_serial_1_1_serial_impl_ab7a6fbc9aeab91dbec5679c2649f381b}{}\label{classserial_1_1serial_1_1_serial_1_1_serial_impl_ab7a6fbc9aeab91dbec5679c2649f381b}
+
+\item 
+size\+\_\+t \hyperlink{classserial_1_1serial_1_1_serial_1_1_serial_impl_adb5572ca568cd0186dec4bc4af28f13b}{write} (const uint8\+\_\+t $\ast$data, size\+\_\+t length)
+\item 
+void {\bfseries flush} ()\hypertarget{classserial_1_1serial_1_1_serial_1_1_serial_impl_a9cc5d31f66893114cc534da96e3533fd}{}\label{classserial_1_1serial_1_1_serial_1_1_serial_impl_a9cc5d31f66893114cc534da96e3533fd}
+
+\item 
+void {\bfseries flush\+Input} ()\hypertarget{classserial_1_1serial_1_1_serial_1_1_serial_impl_acb1b7b1f4a6b088c8a3ada12c878d7a7}{}\label{classserial_1_1serial_1_1_serial_1_1_serial_impl_acb1b7b1f4a6b088c8a3ada12c878d7a7}
+
+\item 
+void {\bfseries flush\+Output} ()\hypertarget{classserial_1_1serial_1_1_serial_1_1_serial_impl_a34ad257f3528acda052ef2cb426d8edb}{}\label{classserial_1_1serial_1_1_serial_1_1_serial_impl_a34ad257f3528acda052ef2cb426d8edb}
+
+\item 
+void {\bfseries send\+Break} (int duration)\hypertarget{classserial_1_1serial_1_1_serial_1_1_serial_impl_a447258df99a7fad4cb5c4cccb3c1d060}{}\label{classserial_1_1serial_1_1_serial_1_1_serial_impl_a447258df99a7fad4cb5c4cccb3c1d060}
+
+\item 
+bool {\bfseries set\+Break} (bool level)\hypertarget{classserial_1_1serial_1_1_serial_1_1_serial_impl_afeb6442ab9f46d11a0ea987040cf7e7e}{}\label{classserial_1_1serial_1_1_serial_1_1_serial_impl_afeb6442ab9f46d11a0ea987040cf7e7e}
+
+\item 
+bool {\bfseries set\+R\+TS} (bool level)\hypertarget{classserial_1_1serial_1_1_serial_1_1_serial_impl_aad23f8148f344342dffc77c0013a2280}{}\label{classserial_1_1serial_1_1_serial_1_1_serial_impl_aad23f8148f344342dffc77c0013a2280}
+
+\item 
+bool {\bfseries set\+D\+TR} (bool level)\hypertarget{classserial_1_1serial_1_1_serial_1_1_serial_impl_a8477f2aed44d88becd0a40ba32498768}{}\label{classserial_1_1serial_1_1_serial_1_1_serial_impl_a8477f2aed44d88becd0a40ba32498768}
+
+\item 
+bool {\bfseries wait\+For\+Change} ()\hypertarget{classserial_1_1serial_1_1_serial_1_1_serial_impl_ae68343df4d16ce1b10420a6a02697c57}{}\label{classserial_1_1serial_1_1_serial_1_1_serial_impl_ae68343df4d16ce1b10420a6a02697c57}
+
+\item 
+bool {\bfseries get\+C\+TS} ()\hypertarget{classserial_1_1serial_1_1_serial_1_1_serial_impl_a5fc1c15b90684eb26ec0acd9384ca08d}{}\label{classserial_1_1serial_1_1_serial_1_1_serial_impl_a5fc1c15b90684eb26ec0acd9384ca08d}
+
+\item 
+bool {\bfseries get\+D\+SR} ()\hypertarget{classserial_1_1serial_1_1_serial_1_1_serial_impl_affd908535c0a1289fc569f75e164a6fe}{}\label{classserial_1_1serial_1_1_serial_1_1_serial_impl_affd908535c0a1289fc569f75e164a6fe}
+
+\item 
+bool {\bfseries get\+RI} ()\hypertarget{classserial_1_1serial_1_1_serial_1_1_serial_impl_a9ab73427541982ce5dfe134135ebb4c3}{}\label{classserial_1_1serial_1_1_serial_1_1_serial_impl_a9ab73427541982ce5dfe134135ebb4c3}
+
+\item 
+bool {\bfseries get\+CD} ()\hypertarget{classserial_1_1serial_1_1_serial_1_1_serial_impl_ad7a9b7000f8549646b126678793ed17c}{}\label{classserial_1_1serial_1_1_serial_1_1_serial_impl_ad7a9b7000f8549646b126678793ed17c}
+
+\item 
+uint32\+\_\+t {\bfseries get\+Byte\+Time} ()\hypertarget{classserial_1_1serial_1_1_serial_1_1_serial_impl_ac0cc92005cc432c46aee39e2716d745e}{}\label{classserial_1_1serial_1_1_serial_1_1_serial_impl_ac0cc92005cc432c46aee39e2716d745e}
+
+\item 
+void {\bfseries set\+Port} (const string \&port)\hypertarget{classserial_1_1serial_1_1_serial_1_1_serial_impl_a7892f9a93d19590ab8eeea714c2049e7}{}\label{classserial_1_1serial_1_1_serial_1_1_serial_impl_a7892f9a93d19590ab8eeea714c2049e7}
+
+\item 
+string {\bfseries get\+Port} () const \hypertarget{classserial_1_1serial_1_1_serial_1_1_serial_impl_a3d38bb67d3f8c92ec403ff8604c0d923}{}\label{classserial_1_1serial_1_1_serial_1_1_serial_impl_a3d38bb67d3f8c92ec403ff8604c0d923}
+
+\item 
+void {\bfseries set\+Timeout} (\hyperlink{structserial_1_1_timeout}{Timeout} \&timeout)\hypertarget{classserial_1_1serial_1_1_serial_1_1_serial_impl_ad86a453dedefa2c3509ccdfa98b2b62a}{}\label{classserial_1_1serial_1_1_serial_1_1_serial_impl_ad86a453dedefa2c3509ccdfa98b2b62a}
+
+\item 
+\hyperlink{structserial_1_1_timeout}{Timeout} {\bfseries get\+Timeout} () const \hypertarget{classserial_1_1serial_1_1_serial_1_1_serial_impl_a55ca6631e7755d36354ce4a4ba79c283}{}\label{classserial_1_1serial_1_1_serial_1_1_serial_impl_a55ca6631e7755d36354ce4a4ba79c283}
+
+\item 
+bool {\bfseries set\+Baudrate} (unsigned long baudrate)\hypertarget{classserial_1_1serial_1_1_serial_1_1_serial_impl_a444886b89018c146bc079c4ee1a9f32a}{}\label{classserial_1_1serial_1_1_serial_1_1_serial_impl_a444886b89018c146bc079c4ee1a9f32a}
+
+\item 
+bool {\bfseries set\+Standard\+Baud\+Rate} (speed\+\_\+t baudrate)\hypertarget{classserial_1_1serial_1_1_serial_1_1_serial_impl_a6435bb73b578ea5d774051cc963f91a6}{}\label{classserial_1_1serial_1_1_serial_1_1_serial_impl_a6435bb73b578ea5d774051cc963f91a6}
+
+\item 
+bool {\bfseries set\+Custom\+Baud\+Rate} (unsigned long baudrate)\hypertarget{classserial_1_1serial_1_1_serial_1_1_serial_impl_a794b6360f26190156063f51c58b31e6a}{}\label{classserial_1_1serial_1_1_serial_1_1_serial_impl_a794b6360f26190156063f51c58b31e6a}
+
+\item 
+unsigned long {\bfseries get\+Baudrate} () const \hypertarget{classserial_1_1serial_1_1_serial_1_1_serial_impl_a8c736ed613551eed0c1824dc0499ec37}{}\label{classserial_1_1serial_1_1_serial_1_1_serial_impl_a8c736ed613551eed0c1824dc0499ec37}
+
+\item 
+bool {\bfseries set\+Bytesize} (\hyperlink{namespaceserial_a00b3281fa11cea770c0b0c8a106080f8}{bytesize\+\_\+t} bytesize)\hypertarget{classserial_1_1serial_1_1_serial_1_1_serial_impl_a8d5586c60701a8cf9fa42c7c25bdde74}{}\label{classserial_1_1serial_1_1_serial_1_1_serial_impl_a8d5586c60701a8cf9fa42c7c25bdde74}
+
+\item 
+\hyperlink{namespaceserial_a00b3281fa11cea770c0b0c8a106080f8}{bytesize\+\_\+t} {\bfseries get\+Bytesize} () const \hypertarget{classserial_1_1serial_1_1_serial_1_1_serial_impl_a2a48e8b24ed35bc6a30688daa602352b}{}\label{classserial_1_1serial_1_1_serial_1_1_serial_impl_a2a48e8b24ed35bc6a30688daa602352b}
+
+\item 
+bool {\bfseries set\+Parity} (\hyperlink{namespaceserial_a8f45d26bf7c9a06659e75b5004a50481}{parity\+\_\+t} parity)\hypertarget{classserial_1_1serial_1_1_serial_1_1_serial_impl_a72883607f1f886997f7f1bed11100382}{}\label{classserial_1_1serial_1_1_serial_1_1_serial_impl_a72883607f1f886997f7f1bed11100382}
+
+\item 
+\hyperlink{namespaceserial_a8f45d26bf7c9a06659e75b5004a50481}{parity\+\_\+t} {\bfseries get\+Parity} () const \hypertarget{classserial_1_1serial_1_1_serial_1_1_serial_impl_ab23ff21e8348c553b64e4600826dbdd4}{}\label{classserial_1_1serial_1_1_serial_1_1_serial_impl_ab23ff21e8348c553b64e4600826dbdd4}
+
+\item 
+bool {\bfseries set\+Stopbits} (\hyperlink{namespaceserial_af5b116611d6628a3aa8f788fdc09f469}{stopbits\+\_\+t} stopbits)\hypertarget{classserial_1_1serial_1_1_serial_1_1_serial_impl_af10d0c02711c21aa3f9610d141eb0717}{}\label{classserial_1_1serial_1_1_serial_1_1_serial_impl_af10d0c02711c21aa3f9610d141eb0717}
+
+\item 
+\hyperlink{namespaceserial_af5b116611d6628a3aa8f788fdc09f469}{stopbits\+\_\+t} {\bfseries get\+Stopbits} () const \hypertarget{classserial_1_1serial_1_1_serial_1_1_serial_impl_ad2c9aa573c52c8811ab54bd8d2ee7abc}{}\label{classserial_1_1serial_1_1_serial_1_1_serial_impl_ad2c9aa573c52c8811ab54bd8d2ee7abc}
+
+\item 
+bool {\bfseries set\+Flowcontrol} (\hyperlink{namespaceserial_a93ef57a314b4e562f9eded6c15d34351}{flowcontrol\+\_\+t} flowcontrol)\hypertarget{classserial_1_1serial_1_1_serial_1_1_serial_impl_af14e9cbd4780d8786d6206a8c1870d88}{}\label{classserial_1_1serial_1_1_serial_1_1_serial_impl_af14e9cbd4780d8786d6206a8c1870d88}
+
+\item 
+\hyperlink{namespaceserial_a93ef57a314b4e562f9eded6c15d34351}{flowcontrol\+\_\+t} {\bfseries get\+Flowcontrol} () const \hypertarget{classserial_1_1serial_1_1_serial_1_1_serial_impl_ada9392d462e7f1b922e1f2ea7c2bd881}{}\label{classserial_1_1serial_1_1_serial_1_1_serial_impl_ada9392d462e7f1b922e1f2ea7c2bd881}
+
+\item 
+bool {\bfseries set\+Termios} (const termios $\ast$tio)\hypertarget{classserial_1_1serial_1_1_serial_1_1_serial_impl_a94df4cb3ea8b58d124554637b3cc98d6}{}\label{classserial_1_1serial_1_1_serial_1_1_serial_impl_a94df4cb3ea8b58d124554637b3cc98d6}
+
+\item 
+bool {\bfseries get\+Termios} (termios $\ast$tio)\hypertarget{classserial_1_1serial_1_1_serial_1_1_serial_impl_a07e74d9a01c0a9ebb54c214fb3453856}{}\label{classserial_1_1serial_1_1_serial_1_1_serial_impl_a07e74d9a01c0a9ebb54c214fb3453856}
+
+\item 
+int {\bfseries read\+Lock} ()\hypertarget{classserial_1_1serial_1_1_serial_1_1_serial_impl_a1a63f1071f960e512b7f83824cc46bc7}{}\label{classserial_1_1serial_1_1_serial_1_1_serial_impl_a1a63f1071f960e512b7f83824cc46bc7}
+
+\item 
+int {\bfseries read\+Unlock} ()\hypertarget{classserial_1_1serial_1_1_serial_1_1_serial_impl_aa91835c9873bbba6a3693848ec10bd63}{}\label{classserial_1_1serial_1_1_serial_1_1_serial_impl_aa91835c9873bbba6a3693848ec10bd63}
+
+\item 
+int {\bfseries write\+Lock} ()\hypertarget{classserial_1_1serial_1_1_serial_1_1_serial_impl_a6dd6c072c2022087816e36edae1bd874}{}\label{classserial_1_1serial_1_1_serial_1_1_serial_impl_a6dd6c072c2022087816e36edae1bd874}
+
+\item 
+int {\bfseries write\+Unlock} ()\hypertarget{classserial_1_1serial_1_1_serial_1_1_serial_impl_a8061d98e76fae5b808d2dc86b972ce1a}{}\label{classserial_1_1serial_1_1_serial_1_1_serial_impl_a8061d98e76fae5b808d2dc86b972ce1a}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{serial\+::serial\+::\+Serial\+::\+Serial\+Impl@{serial\+::serial\+::\+Serial\+::\+Serial\+Impl}!write@{write}}
+\index{write@{write}!serial\+::serial\+::\+Serial\+::\+Serial\+Impl@{serial\+::serial\+::\+Serial\+::\+Serial\+Impl}}
+\subsubsection[{\texorpdfstring{write(const uint8\+\_\+t $\ast$data, size\+\_\+t length)}{write(const uint8_t *data, size_t length)}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t serial\+::\+Serial\+::\+Serial\+Impl\+::write (
+\begin{DoxyParamCaption}
+\item[{const uint8\+\_\+t $\ast$}]{data, }
+\item[{size\+\_\+t}]{length}
+\end{DoxyParamCaption}
+)}\hypertarget{classserial_1_1serial_1_1_serial_1_1_serial_impl_adb5572ca568cd0186dec4bc4af28f13b}{}\label{classserial_1_1serial_1_1_serial_1_1_serial_impl_adb5572ca568cd0186dec4bc4af28f13b}
+Error
+
+\hyperlink{structserial_1_1_timeout}{Timeout}
+
+Port ready to write 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/yang/tmp/sdk/src/impl/unix/unix\+\_\+serial.\+h\item 
+/home/yang/tmp/sdk/src/impl/unix/unix\+\_\+serial.\+cpp\end{DoxyCompactItemize}

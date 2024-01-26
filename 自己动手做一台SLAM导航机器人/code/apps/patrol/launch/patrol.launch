@@ -1,0 +1,3 @@
+<launch>
+  <node name="patrol_node" pkg="patrol" type="patrol_fsm.py" output="screen" />
+</launch>

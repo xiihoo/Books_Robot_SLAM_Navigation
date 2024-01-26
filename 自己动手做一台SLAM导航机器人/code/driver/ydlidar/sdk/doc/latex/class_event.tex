@@ -1,0 +1,49 @@
+\hypertarget{class_event}{}\section{Event Class Reference}
+\label{class_event}\index{Event@{Event}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ {\bfseries E\+V\+E\+N\+T\+\_\+\+OK} = 1, 
+{\bfseries E\+V\+E\+N\+T\+\_\+\+T\+I\+M\+E\+O\+UT} = 2, 
+{\bfseries E\+V\+E\+N\+T\+\_\+\+F\+A\+I\+L\+ED} = 0
+ \}\hypertarget{class_event_a99a155041141cae7621f251dfdbea0aa}{}\label{class_event_a99a155041141cae7621f251dfdbea0aa}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Event} (bool is\+Auto\+Reset=true, bool is\+Signal=false)\hypertarget{class_event_a1a533c1311f6e5e216e18cdb0a195562}{}\label{class_event_a1a533c1311f6e5e216e18cdb0a195562}
+
+\item 
+void {\bfseries set} (bool is\+Signal=true)\hypertarget{class_event_a8fe592771e891bbaa524e6681b870db2}{}\label{class_event_a8fe592771e891bbaa524e6681b870db2}
+
+\item 
+unsigned long {\bfseries wait} (unsigned long timeout=0x\+F\+F\+F\+F\+F\+F\+F\+F)\hypertarget{class_event_a026f379d5eba34adbfd1892a2c5a1f43}{}\label{class_event_a026f379d5eba34adbfd1892a2c5a1f43}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries release} ()\hypertarget{class_event_aa6b17dba2949879c7e19e3651d061b7b}{}\label{class_event_aa6b17dba2949879c7e19e3651d061b7b}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+pthread\+\_\+cond\+\_\+t {\bfseries \+\_\+cond\+\_\+var}\hypertarget{class_event_acf1cb5e02dbbb2d32319f1f60f1cb9fa}{}\label{class_event_acf1cb5e02dbbb2d32319f1f60f1cb9fa}
+
+\item 
+pthread\+\_\+mutex\+\_\+t {\bfseries \+\_\+cond\+\_\+locker}\hypertarget{class_event_a151be53028faee4d60620cca190df90b}{}\label{class_event_a151be53028faee4d60620cca190df90b}
+
+\item 
+bool {\bfseries \+\_\+is\+\_\+signalled}\hypertarget{class_event_afdbb004c4e19a444aebf79b4745c2c76}{}\label{class_event_afdbb004c4e19a444aebf79b4745c2c76}
+
+\item 
+bool {\bfseries \+\_\+is\+Auto\+Reset}\hypertarget{class_event_a7f609b99f6132b957a68324b3f80441b}{}\label{class_event_a7f609b99f6132b957a68324b3f80441b}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/yang/tmp/sdk/include/locker.\+h\end{DoxyCompactItemize}

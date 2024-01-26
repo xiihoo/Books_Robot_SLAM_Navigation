@@ -1,0 +1,13 @@
+<launch>
+  <!-- robot model -->
+  <include file="$(find miiboo_description)/launch/miiboo_description.launch"/>
+
+  <!-- launch laser -->
+  <include file="$(find ydlidar)/launch/my_x4.launch" />
+
+  <!-- launch imu -->
+  <include file="$(find miiboo_imu)/launch/imu.launch" />
+
+  <!-- launch broadcast_ip -->
+  <include file="$(find broadcast_ip)/launch/broadcast_udp.launch" />
+</launch>

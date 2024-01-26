@@ -1,0 +1,169 @@
+\hypertarget{namespaceserial}{}\section{serial Namespace Reference}
+\label{namespaceserial}\index{serial@{serial}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classserial_1_1_millisecond_timer}{Millisecond\+Timer}
+\item 
+struct \hyperlink{structserial_1_1_port_info}{Port\+Info}
+\item 
+class \hyperlink{classserial_1_1_serial}{Serial}
+\item 
+struct \hyperlink{structserial_1_1termios2}{termios2}
+\item 
+struct \hyperlink{structserial_1_1_timeout}{Timeout}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{namespaceserial_a00b3281fa11cea770c0b0c8a106080f8}{bytesize\+\_\+t} \{ {\bfseries fivebits} = 5, 
+{\bfseries sixbits} = 6, 
+{\bfseries sevenbits} = 7, 
+{\bfseries eightbits} = 8
+ \}
+\item 
+enum \hyperlink{namespaceserial_a8f45d26bf7c9a06659e75b5004a50481}{parity\+\_\+t} \{ \\*
+{\bfseries parity\+\_\+none} = 0, 
+{\bfseries parity\+\_\+odd} = 1, 
+{\bfseries parity\+\_\+even} = 2, 
+{\bfseries parity\+\_\+mark} = 3, 
+\\*
+{\bfseries parity\+\_\+space} = 4
+ \}
+\item 
+enum \hyperlink{namespaceserial_af5b116611d6628a3aa8f788fdc09f469}{stopbits\+\_\+t} \{ {\bfseries stopbits\+\_\+one} = 1, 
+{\bfseries stopbits\+\_\+two} = 2, 
+{\bfseries stopbits\+\_\+one\+\_\+point\+\_\+five}
+ \}
+\item 
+enum \hyperlink{namespaceserial_a93ef57a314b4e562f9eded6c15d34351}{flowcontrol\+\_\+t} \{ {\bfseries flowcontrol\+\_\+none} = 0, 
+{\bfseries flowcontrol\+\_\+software}, 
+{\bfseries flowcontrol\+\_\+hardware}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+timespec {\bfseries timespec\+\_\+from\+\_\+ms} (const uint32\+\_\+t millis)\hypertarget{namespaceserial_a09034c92478b6d7f950ecb91f41ff24e}{}\label{namespaceserial_a09034c92478b6d7f950ecb91f41ff24e}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+setup\+\_\+port -\/ Configure the port, eg. baud rate, data bits,etc.
+
+
+\begin{DoxyParams}{Parameters}
+{\em fd} & \+: The serial port \\
+\hline
+{\em speed} & \+: The baud rate \\
+\hline
+{\em data\+\_\+bits} & \+: The data bits \\
+\hline
+{\em parity} & \+: The parity bits \\
+\hline
+{\em stop\+\_\+bits} & \+: The stop bits\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 if everything is OK, otherwise -\/1 with some error msg. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Here are termios structure members\+: \begin{DoxyVerb}Member      Description 
+c_cflag     Control options 
+c_lflag     Line options 
+c_iflag     Input options 
+c_oflag     Output options 
+c_cc        Control characters 
+c_ispeed    Input baud (new interface) 
+c_ospeed    Output baud (new interface) 
+\end{DoxyVerb}
+ The c\+\_\+cflag member controls the baud rate, number of data bits, parity, stop bits, and hardware flow control. There are constants for all of the supported configurations. Constant Description \begin{DoxyVerb}CBAUD   Bit mask for baud rate 
+B0  0 baud (drop DTR) 
+B50 50 baud 
+B75 75 baud 
+B110    110 baud 
+B134    134.5 baud 
+B150    150 baud 
+B200    200 baud 
+B300    300 baud 
+B600    600 baud 
+B1200   1200 baud 
+B1800   1800 baud 
+B2400   2400 baud 
+B4800   4800 baud 
+B9600   9600 baud 
+B19200  19200 baud 
+B38400  38400 baud 
+B57600  57,600 baud 
+B76800  76,800 baud 
+B115200 115,200 baud 
+EXTA    External rate clock 
+EXTB    External rate clock 
+CSIZE   Bit mask for data bits 
+CS5 5   data bits 
+CS6 6   data bits 
+CS7 7   data bits 
+CS8 8   data bits 
+CSTOPB  2 stop bits (1 otherwise) 
+CREAD   Enable receiver 
+PARENB  Enable parity bit 
+PARODD  Use odd parity instead of even 
+HUPCL   Hangup (drop DTR) on last close 
+CLOCAL  Local line - do not change "owner" of port 
+LOBLK   Block job control output 
+CNEW_RTSCTS CRTSCTS Enable hardware flow control (not supported on all 
+platforms) 
+\end{DoxyVerb}
+ The input modes member c\+\_\+iflag controls any input processing that is done to characters received on the port. Like the c\+\_\+cflag field, the final value stored in c\+\_\+iflag is the bitwise OR of the desired options. \begin{DoxyVerb}Constant    Description 
+INPCK   Enable parity check 
+IGNPAR  Ignore parity errors 
+PARMRK  Mark parity errors 
+ISTRIP  Strip parity bits 
+IXON    Enable software flow control (outgoing) 
+IXOFF   Enable software flow control (incoming) 
+IXANY   Allow any character to start flow again 
+IGNBRK  Ignore break condition 
+BRKINT  Send a SIGINT when a break condition is detected 
+INLCR   Map NL to CR 
+IGNCR   Ignore CR 
+ICRNL   Map CR to NL 
+IUCLC   Map uppercase to lowercase 
+IMAXBEL Echo BEL on input line too long 
+\end{DoxyVerb}
+ Here are some examples of setting parity checking\+: ~\newline
+No parity (8\+N1)\+: \begin{DoxyVerb}options.c_cflag &= ~PARENB
+options.c_cflag &= ~CSTOPB
+options.c_cflag &= ~CSIZE;
+options.c_cflag |= CS8;
+\end{DoxyVerb}
+ Even parity (7\+E1)\+: \begin{DoxyVerb}options.c_cflag |= PARENB
+options.c_cflag &= ~PARODD
+options.c_cflag &= ~CSTOPB
+options.c_cflag &= ~CSIZE;
+options.c_cflag |= CS7;
+\end{DoxyVerb}
+ Odd parity (7\+O1)\+: \begin{DoxyVerb}options.c_cflag |= PARENB
+options.c_cflag |= PARODD
+options.c_cflag &= ~CSTOPB
+options.c_cflag &= ~CSIZE;
+options.c_cflag |= CS7;
+\end{DoxyVerb}
+ 
+\end{DoxyNote}
+
+
+\subsection{Enumeration Type Documentation}
+\index{serial@{serial}!bytesize\+\_\+t@{bytesize\+\_\+t}}
+\index{bytesize\+\_\+t@{bytesize\+\_\+t}!serial@{serial}}
+\subsubsection[{\texorpdfstring{bytesize\+\_\+t}{bytesize_t}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf serial\+::bytesize\+\_\+t}}\hypertarget{namespaceserial_a00b3281fa11cea770c0b0c8a106080f8}{}\label{namespaceserial_a00b3281fa11cea770c0b0c8a106080f8}
+Enumeration defines the possible bytesizes for the serial port. \index{serial@{serial}!flowcontrol\+\_\+t@{flowcontrol\+\_\+t}}
+\index{flowcontrol\+\_\+t@{flowcontrol\+\_\+t}!serial@{serial}}
+\subsubsection[{\texorpdfstring{flowcontrol\+\_\+t}{flowcontrol_t}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf serial\+::flowcontrol\+\_\+t}}\hypertarget{namespaceserial_a93ef57a314b4e562f9eded6c15d34351}{}\label{namespaceserial_a93ef57a314b4e562f9eded6c15d34351}
+Enumeration defines the possible flowcontrol types for the serial port. \index{serial@{serial}!parity\+\_\+t@{parity\+\_\+t}}
+\index{parity\+\_\+t@{parity\+\_\+t}!serial@{serial}}
+\subsubsection[{\texorpdfstring{parity\+\_\+t}{parity_t}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf serial\+::parity\+\_\+t}}\hypertarget{namespaceserial_a8f45d26bf7c9a06659e75b5004a50481}{}\label{namespaceserial_a8f45d26bf7c9a06659e75b5004a50481}
+Enumeration defines the possible parity types for the serial port. \index{serial@{serial}!stopbits\+\_\+t@{stopbits\+\_\+t}}
+\index{stopbits\+\_\+t@{stopbits\+\_\+t}!serial@{serial}}
+\subsubsection[{\texorpdfstring{stopbits\+\_\+t}{stopbits_t}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf serial\+::stopbits\+\_\+t}}\hypertarget{namespaceserial_af5b116611d6628a3aa8f788fdc09f469}{}\label{namespaceserial_af5b116611d6628a3aa8f788fdc09f469}
+Enumeration defines the possible stopbit types for the serial port. 

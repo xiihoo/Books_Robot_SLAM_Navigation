@@ -1,0 +1,68 @@
+#robot footprint shape
+footprint: [[0.2, 0.11], [-0.1, 0.11], [-0.1, -0.11], [0.2, -0.11]]
+#robot_radius: 0.22
+
+#plugins layers list
+static_layer:
+  enabled: true
+  unknown_cost_value: -1
+  lethal_cost_threshold: 100
+  map_topic: /map
+  first_map_only: false
+  subscribe_to_updates: true #default:false
+  track_unknown_space: true
+  use_maximum: false
+  trinary_costmap: true
+
+obstacle_layer:
+  enabled: true
+  #Sensor management parameters
+  observation_sources: laser_scan_sensor #point_cloud_sensor
+  laser_scan_sensor:
+    topic: /scan
+    sensor_frame: /base_laser_link
+    #observation_persistence: 0.0
+    #expected_update_rate: 0.0
+    data_type: LaserScan #alternatives: LaserScan, PointCloud, PointCloud2
+    clearing: true #true, modify by cabin in 03.02
+    marking: true  #true, modify by cabin in 03.02
+    #max_obstacle_height: 0.35 #2.0
+    #min_obstacle_height: 0.25 #0.0
+    #obstacle_range: 2.5
+    #raytrace_range: 3.0
+    #inf_is_valid: false
+  #Global Filtering Parameters
+  #max_obstacle_height: 0.6 #2.0
+  obstacle_range: 2.0 #2.5
+  raytrace_range: 3.0 #3.0
+
+  #ObstacleCostmapPlugin
+  track_unknown_space:  true #false
+  #footprint_clearing_enabled: true
+
+  #VoxelCostmapPlugin
+  #origin_z: 0.0
+  #z_resolution: 0.2
+  #z_voxels: 10
+  #unknown_threshold: 10
+  #mark_threshold: 0
+  #publish_voxel_map: false
+  #footprint_clearing_enabled: true
+
+global_inflation_layer:
+  enabled: true
+  inflation_radius: 1.0 #0.15
+  cost_scaling_factor: 2.0 #10.0
+
+local_inflation_layer:
+  enabled: true
+  inflation_radius: 0.15 #0.15
+  cost_scaling_factor: 5.0 #10.0
+
+#sonar_layer:
+#  topics: ["/sonar/s1", "/sonar/s2", "/sonar/s3", "/sonar/s4"]
+#  no_readings_timeout: 0.0
+#  clear_threshold: 0.2 #0.4
+#  mark_threshold: 0.6 #0.6
+#  clear_on_max_reading: true
+#  #inflate_cone: 0.0

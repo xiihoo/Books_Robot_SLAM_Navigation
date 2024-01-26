@@ -1,0 +1,55 @@
+\hypertarget{class_thread}{}\section{Thread Class Reference}
+\label{class_thread}\index{Thread@{Thread}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\+\_\+size\+\_\+t {\bfseries get\+Handle} ()\hypertarget{class_thread_ae7006a5a8cf4d92a2f0455cd917f0cf6}{}\label{class_thread_ae7006a5a8cf4d92a2f0455cd917f0cf6}
+
+\item 
+int {\bfseries terminate} ()\hypertarget{class_thread_a0e5d53525e16e8c818cafce4569c2376}{}\label{class_thread_a0e5d53525e16e8c818cafce4569c2376}
+
+\item 
+void $\ast$ {\bfseries get\+Param} ()\hypertarget{class_thread_af203c85710ab9a858cb40b86d7bd0790}{}\label{class_thread_af203c85710ab9a858cb40b86d7bd0790}
+
+\item 
+int {\bfseries join} (unsigned long timeout=-\/1)\hypertarget{class_thread_a38398ecb1d536940202fa1cfee8fc0c4}{}\label{class_thread_a38398ecb1d536940202fa1cfee8fc0c4}
+
+\item 
+bool {\bfseries operator==} (const \hyperlink{class_thread}{Thread} \&right)\hypertarget{class_thread_a4d789890939e927d0440581ae2107913}{}\label{class_thread_a4d789890939e927d0440581ae2107913}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class C\+L\+A\+SS , int(\+C\+L\+A\+S\+S\+::$\ast$)(void) P\+R\+OC$>$ }\\static \hyperlink{class_thread}{Thread} {\bfseries Thread\+Create\+Object\+Functor} (C\+L\+A\+SS $\ast$pthis)\hypertarget{class_thread_a3f90db7b5d45b275989c328ef070fb98}{}\label{class_thread_a3f90db7b5d45b275989c328ef070fb98}
+
+\item 
+{\footnotesize template$<$class C\+L\+A\+SS , int(\+C\+L\+A\+S\+S\+::$\ast$)(void) P\+R\+OC$>$ }\\static \+\_\+size\+\_\+t T\+H\+R\+E\+A\+D\+\_\+\+P\+R\+OC {\bfseries create\+Thread\+Aux} (void $\ast$param)\hypertarget{class_thread_ad54c62035ca2dcfc71c7e7181ce00454}{}\label{class_thread_ad54c62035ca2dcfc71c7e7181ce00454}
+
+\item 
+static \hyperlink{class_thread}{Thread} {\bfseries create\+Thread} (thread\+\_\+proc\+\_\+t proc, void $\ast$param=N\+U\+LL)\hypertarget{class_thread_a80157e1154d2a11085fc5a4fe9f9f1ea}{}\label{class_thread_a80157e1154d2a11085fc5a4fe9f9f1ea}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Thread} (thread\+\_\+proc\+\_\+t proc, void $\ast$param)\hypertarget{class_thread_aa9198eddcbadc060866ec2eb2fae9ef6}{}\label{class_thread_aa9198eddcbadc060866ec2eb2fae9ef6}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+void $\ast$ {\bfseries \+\_\+param}\hypertarget{class_thread_a59fd8af5b7f6acb58b0e0b40c4bfabdb}{}\label{class_thread_a59fd8af5b7f6acb58b0e0b40c4bfabdb}
+
+\item 
+thread\+\_\+proc\+\_\+t {\bfseries \+\_\+func}\hypertarget{class_thread_aa2d5e149d2dbab58296ba4c1da6b2b53}{}\label{class_thread_aa2d5e149d2dbab58296ba4c1da6b2b53}
+
+\item 
+\+\_\+size\+\_\+t {\bfseries \+\_\+handle}\hypertarget{class_thread_a1dace00cf3062a0525a479a8c0aea0ee}{}\label{class_thread_a1dace00cf3062a0525a479a8c0aea0ee}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/yang/tmp/sdk/include/thread.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,26 @@
+<launch>
+  <!-- Map server -->
+  <arg name="map_path" default="/home/ubuntu/map/carto_map.yaml" />
+  <node name="map_server" pkg="map_server" type="map_server" args="$(arg map_path)"/>  
+
+  <!--- Run AMCL -->
+  <arg name="initial_pose_x" default="0.0"/>
+  <arg name="initial_pose_y" default="0.0"/>
+  <arg name="initial_pose_a" default="0.0"/>
+  <include file="$(find miiboo_nav)/config/amcl.launch.xml">
+    <arg name="initial_pose_x" value="$(arg initial_pose_x)"/>
+    <arg name="initial_pose_y" value="$(arg initial_pose_y)"/>
+    <arg name="initial_pose_a" value="$(arg initial_pose_a)"/>
+  </include>
+
+  <!-- Run move_base -->
+  <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen" clear_params="true">
+    <rosparam file="$(find miiboo_nav)/config/costmap_common_params.yaml" command="load" ns="global_costmap" />
+    <rosparam file="$(find miiboo_nav)/config/costmap_common_params.yaml" command="load" ns="local_costmap" />
+    <rosparam file="$(find miiboo_nav)/config/global_costmap_params.yaml" command="load" />
+    <rosparam file="$(find miiboo_nav)/config/local_costmap_params.yaml"  command="load" />
+    <rosparam file="$(find miiboo_nav)/config/move_base_params.yaml"      command="load" />
+    <rosparam file="$(find miiboo_nav)/config/global_planner_params.yaml" command="load" />
+    <rosparam file="$(find miiboo_nav)/config/teb_local_planner_params.yaml" command="load" />
+  </node>
+</launch>
