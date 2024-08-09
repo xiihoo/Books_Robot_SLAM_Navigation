@@ -23,8 +23,7 @@
 * 百度网盘链接： https://pan.baidu.com/s/1nHbI0mi-iM72NAcQlAU1uQ?pwd=1234
 * 提取码：1234
 ## 图书封面
-![](BOOK1.jpg)
-![](BOOK2.PNG)
+![avatar](http://xiihoo.com/static/image/book_front_800x800.jpg)
 ## 目录
 <ul>
   <li><font color=#008000 >序</font></li>
@@ -113,6 +112,7 @@
   + 1-第1季：第5章_机器人主机.pdf
   + 1-第1季：第6章_机器人底盘.pdf
   + 1-第1季：第7章_SLAM中的数学基础.pdf
+  + 1-第1季：第8章_激光SLAM系统.pdf
   + 更新中......
 * **3.习题答案**
   + 附录B_习题.pdf
@@ -196,5 +196,86 @@
   + <a href="https://www.bilibili.com/video/BV1jS4y1a7Lz?p=62">【第1季】7.5.第7章_SLAM中的数学基础_基于因子图的状态估计-视频讲解</a>
   + <a href="https://www.bilibili.com/video/BV1jS4y1a7Lz?p=63">【第1季】7.6.第7章_SLAM中的数学基础_典型SLAM算法-视频讲解</a>
   + <a href="https://www.bilibili.com/video/BV1jS4y1a7Lz?p=64">【第1季】7.7.第7章_SLAM中的数学基础_SFM、BA和SLAM比较-视频讲解</a>
+  + <a href="https://www.bilibili.com/video/BV1jS4y1a7Lz?p=65">【第1季】8.第8章_激光SLAM系统-视频讲解</a>
+  + <a href="https://www.bilibili.com/video/BV1jS4y1a7Lz?p=66">【第1季】8.1.第8章_激光SLAM系统_Gmapping算法-视频讲解</a>
+  + <a href="https://www.bilibili.com/video/BV1jS4y1a7Lz?p=67">【第1季】8.2.第8章_激光SLAM系统_Cartographer算法-视频讲解</a>
+  + <a href="https://www.bilibili.com/video/BV1jS4y1a7Lz?p=68">【第1季】8.3.第8章_激光SLAM系统_LOAM算法-视频讲解</a>
   + 更多精彩内容，正在更新...
-  
+## 第三方库引用说明
+本项目最终是为了将书本中学习到的理论知识应用到实战，并通过动手实践制作出一台可以实际运行的SLAM导航机器人（也就是“xiihoo”机器人）。实战过程中，除了需要搭建机器人硬件，还需要搭建机器人软件及相应的软件运行环境。系统和软件版本并不是越新越好，够用就行了，大家切记。本项目推荐使用ubuntu18.04操作系统和ROS melodic版本，除此之外还涉及到众多第三方库环境，为了方便大家学习将其整理如下：
+* 操作系统版本：ubuntu18.04
+  + https://ubuntu.com/
+  + https://releases.ubuntu.com/
+* ROS平台版本：ROS melodic
+    + https://wiki.ros.org/melodic
+    + https://github.com/ros
+    + https://github.com/ros/rosdistro/tree/master/melodic
+    + https://github.com/ros/ros_comm/tree/melodic-devel
+    + https://github.com/ros/ros/tree/melodic-devel
+    + https://index.ros.org/packages/#melodic
+* OpenCV库版本：opencv-3.2.0 opencv_contrib-3.2.0
+  + https://github.com/opencv/opencv/tree/3.2.0
+  + https://github.com/opencv/opencv_contrib/tree/3.2.0
+* Gmapping版本：slam_gmapping-ros-melodic openslam_gmapping-ros-melodic
+  + https://github.com/ros-perception/slam_gmapping/tree/melodic-devel
+  + https://github.com/ros-perception/openslam_gmapping/tree/melodic-devel
+* Cartographer版本：cartographer_ros-1.0.0 cartographer-1.0.0 ceres-solver-1.13.0
+  + https://github.com/cartographer-project/cartographer_ros/releases/tag/1.0.0
+  + https://github.com/cartographer-project/cartographer/releases/tag/1.0.0
+  + https://github.com/ceres-solver/ceres-solver/releases/tag/1.13.0
+* LOAM版本：loam_velodyne
+  + https://github.com/laboshinl/loam_velodyne
+  + https://github.com/HKUST-Aerial-Robotics/A-LOAM
+  + https://github.com/RobustFieldAutonomyLab/LeGO-LOAM
+* ORB-SLAM版本：ORB_SLAM2
+  + https://github.com/raulmur/ORB_SLAM2
+  + https://gitlab.com/libeigen/eigen/-/tree/3.2.10
+  + https://github.com/stevenlovegrove/Pangolin
+  + https://github.com/dorian3d/DBoW2
+  + https://github.com/RainerKuemmerle/g2o
+* 三维空间运动几何库：Sophus manif
+  + https://github.com/strasdat/Sophus
+  + https://github.com/artivis/manif
+* 点云库：PCL
+  + https://github.com/PointCloudLibrary/pcl
+* PnP库：EPnP
+  + https://github.com/cvlab-epfl/EPnP
+* LSD-SLAM版本：
+  + https://github.com/tum-vision/lsd_slam
+* SVO版本：
+  + https://github.com/uzh-rpg/rpg_svo
+* RTABMAP版本：
+  + https://github.com/introlab/rtabmap_ros
+  + https://github.com/introlab/rtabmap
+  + https://github.com/RainerKuemmerle/g2o
+  + https://github.com/borglab/gtsam
+  + https://github.com/ethz-asl/libpointmatcher
+* IMU外参标定库：
+  + https://github.com/ethz-asl/kalibr
+* IMU融合：
+  + https://github.com/ethz-asl/ethzasl_sensor_fusion
+  + https://github.com/ethz-asl/ethzasl_msf
+* VINS版本：
+  + https://github.com/HKUST-Aerial-Robotics/VINS-Mono
+* 机器学习Python例程库：
+  + https://github.com/the-learning-machine/ML-algorithms-python
+* CNN_SLAM版本：
+  + https://github.com/iitmcvg/CNN_SLAM
+* DeepVO版本：
+  + https://github.com/themightyoarfish/deepVO
+* 导航框架版本：navigation-ros-melodic
+  + https://github.com/ros-planning/navigation/tree/melodic-devel
+* 里程计融合：
+  + https://github.com/ros-planning/robot_pose_ekf
+* 激光里程计：
+  + https://github.com/MAPIRlab/rf2o_laser_odometry
+* 路径规划插件：
+  + https://github.com/srl-freiburg/srl_global_planner
+  + https://github.com/rst-tu-dortmund/teb_local_planner
+* 环境探索：
+  + https://github.com/paulbovbel/frontier_exploration
+  + https://github.com/hasauino/rrt_exploration
+* riskrrt导航框架：
+  + https://github.com/spalanza/riskrrt_ros
+* autoware导航框架：
+  + https://github.com/Autoware-AI/autoware.ai
