@@ -1,0 +1,5 @@
+############PPT课件下载说明#############
+由于PPT课件文件较大，放在github和gitee仓库会导致下载卡死或下载慢的问题，请前往百度网盘下载。
+
+百度网盘链接： https://pan.baidu.com/s/1nHbI0mi-iM72NAcQlAU1uQ?pwd=1234
+提取码：1234
