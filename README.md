@@ -23,6 +23,15 @@
 ## 资料汇总下载
 * 百度网盘链接： https://pan.baidu.com/s/1nHbI0mi-iM72NAcQlAU1uQ?pwd=1234
 * 提取码：1234
+* 百度网盘资料目录预览：
+  + 0-SLAM学习思维导图
+  + 0-先导课
+  + 1-第1季
+  + 测试数据集
+  + 工具软件
+  + 课件
+  + 微课
+  + 自己动手做一台SLAM导航机器人
 ## 图书封面
 ![avatar](http://xiihoo.com/static/image/book_front_800x800.jpg)
 ## 目录
@@ -103,17 +112,31 @@
   + 更新中......
 * **2.课件**
   + 0-先导课：课程大纲.pdf
+  + 0-先导课：课程大纲.pptx
   + 0-先导课：如何安装Ubuntu系统.pdf
+  + 0-先导课：如何安装Ubuntu系统.pptx
   + 0-先导课：SLAM的应用价值与技术难点.pdf
+  + 0-先导课：SLAM的应用价值与技术难点.pptx
   + 1-第1季：第0章_SLAM发展综述.pdf
+  + 1-第1季：第0章_SLAM发展综述.pptx
   + 1-第1季：第1章_ROS入门必备知识.pdf
+  + 1-第1季：第1章_ROS入门必备知识.pptx
   + 1-第1季：第2章_C++编程范式.pdf
+  + 1-第1季：第2章_C++编程范式.pptx
   + 1-第1季：第3章_OpenCV图像处理.pdf
+  + 1-第1季：第3章_OpenCV图像处理.pptx
   + 1-第1季：第4章_机器人传感器.pdf
+  + 1-第1季：第4章_机器人传感器.pptx
   + 1-第1季：第5章_机器人主机.pdf
+  + 1-第1季：第5章_机器人主机.pptx
   + 1-第1季：第6章_机器人底盘.pdf
+  + 1-第1季：第6章_机器人底盘.pptx
   + 1-第1季：第7章_SLAM中的数学基础.pdf
+  + 1-第1季：第7章_SLAM中的数学基础.pptx
   + 1-第1季：第8章_激光SLAM系统.pdf
+  + 1-第1季：第8章_激光SLAM系统.pptx
+  + 1-第1季：第9章_视觉SLAM系统.pdf
+  + 1-第1季：第9章_视觉SLAM系统.pptx
   + 更新中......
 * **3.习题答案**
   + 附录B_习题.pdf
@@ -121,7 +144,22 @@
 * **4.学习思维导图**
   + 学习思维导图.png
   + 学习思维导图.xmind
-
+* **工具软件**
+  + 三维空间可视化工具XH-3D-VIEW(V1.0.1).zip
+* **自己动手做一台SLAM导航机器人**
+  + code
+  + 概述.pdf
+  + 前言.pdf
+  + 第1章：Linux基础.pdf
+  + 第2章：ROS入门.pdf
+  + 第3章：感知与大脑.pdf
+  + 第4章：差分底盘设计.pdf
+  + 第5章：树莓派3开发环境搭建.pdf
+  + 第6章：SLAM建图与自主避障导航.pdf
+  + 第7章：语音交互与自然语言处理.pdf
+  + 附录A：用于ROS机器人交互的Android手机APP开发.pdf
+  + 附录B：用于ROS机器人管理调度的后台服务器搭建.pdf
+  + 附录C：如何选择ROS机器人平台进行SLAM导航入门.pdf
 ## 知乎专栏教程
 * 知乎：https://www.zhihu.com/people/hiram_zhang
 * 知乎专栏：
@@ -201,6 +239,11 @@
   + <a href="https://www.bilibili.com/video/BV1jS4y1a7Lz?p=66">【第1季】8.1.第8章_激光SLAM系统_Gmapping算法-视频讲解</a>
   + <a href="https://www.bilibili.com/video/BV1jS4y1a7Lz?p=67">【第1季】8.2.第8章_激光SLAM系统_Cartographer算法-视频讲解</a>
   + <a href="https://www.bilibili.com/video/BV1jS4y1a7Lz?p=68">【第1季】8.3.第8章_激光SLAM系统_LOAM算法-视频讲解</a>
+  + <a href="https://www.bilibili.com/video/BV1jS4y1a7Lz?p=69">【第1季】9.第9章_视觉SLAM系统-视频讲解</a>
+  + <a href="https://www.bilibili.com/video/BV1jS4y1a7Lz?p=70">【第1季】9.1.第9章_视觉SLAM系统_ORB-SLAM2算法（上）-视频讲解</a>
+  + <a href="https://www.bilibili.com/video/BV1jS4y1a7Lz?p=71">【第1季】9.1.第9章_视觉SLAM系统_ORB-SLAM2算法（下）-视频讲解</a>
+  + <a href="https://www.bilibili.com/video/BV1jS4y1a7Lz?p=72">【第1季】9.2.第9章_视觉SLAM系统_LSD-SLAM算法-视频讲解</a>
+  + <a href="https://www.bilibili.com/video/BV1jS4y1a7Lz?p=73">【第1季】9.3.第9章_视觉SLAM系统_SVO算法-视频讲解</a>
   + 更多精彩内容，正在更新...
 ## 第三方库引用说明
 本项目最终是为了将书本中学习到的理论知识应用到实战，并通过动手实践制作出一台可以实际运行的SLAM导航机器人（也就是“xiihoo”机器人）。实战过程中，除了需要搭建机器人硬件，还需要搭建机器人软件及相应的软件运行环境。系统和软件版本并不是越新越好，够用就行了，大家切记。本项目推荐使用ubuntu18.04操作系统和ROS melodic版本，除此之外还涉及到众多第三方库环境，为了方便大家学习将其整理如下：
