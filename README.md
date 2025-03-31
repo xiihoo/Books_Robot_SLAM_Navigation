@@ -125,6 +125,7 @@
   + 1-第1季：第8章_激光SLAM系统.pdf
   + 1-第1季：第9章_视觉SLAM系统.pdf
   + 1-第1季：第10章_其他SLAM系统.pdf
+  + 1-第1季：第11章_自主导航中的数学基础.pdf
   + 更新中......
   + **PPT课件下载说明:**
     - 由于PPT课件文件较大，放在github和gitee仓库会导致下载卡死或下载慢的问题，请前往百度网盘下载
@@ -240,6 +241,12 @@
   + <a href="https://www.bilibili.com/video/BV1jS4y1a7Lz?p=75">【第1季】10.1.第10章_其他SLAM系统_RTABMAP算法-视频讲解</a>
   + <a href="https://www.bilibili.com/video/BV1jS4y1a7Lz?p=76">【第1季】10.2.第10章_其他SLAM系统_VINS算法-视频讲解</a>
   + <a href="https://www.bilibili.com/video/BV1jS4y1a7Lz?p=77">【第1季】10.3.第10章_其他SLAM系统_机器学习与SLAM-视频讲解</a>
+  + <a href="https://www.bilibili.com/video/BV1jS4y1a7Lz?p=78">【第1季】11.第11章_自主导航中的数学基础-视频讲解</a>
+  + <a href="https://www.bilibili.com/video/BV1jS4y1a7Lz?p=79">【第1季】11.1.第11章_自主导航中的数学基础_自主导航-视频讲解</a>
+  + <a href="https://www.bilibili.com/video/BV1jS4y1a7Lz?p=80">【第1季】11.2.第11章_自主导航中的数学基础_环境感知-视频讲解</a>
+  + <a href="https://www.bilibili.com/video/BV1jS4y1a7Lz?p=81">【第1季】11.3.第11章_自主导航中的数学基础_路径规划-视频讲解</a>
+  + <a href="https://www.bilibili.com/video/BV1jS4y1a7Lz?p=82">【第1季】11.4.第11章_自主导航中的数学基础_运动控制-视频讲解</a>
+  + <a href="https://www.bilibili.com/video/BV1jS4y1a7Lz?p=83">【第1季】11.5.第11章_自主导航中的数学基础_强化学习与自主导航-视频讲解</a>
   + 更多精彩内容，正在更新...
 ## 第三方库引用说明
 本项目最终是为了将书本中学习到的理论知识应用到实战，并通过动手实践制作出一台可以实际运行的SLAM导航机器人（也就是“xiihoo”机器人）。实战过程中，除了需要搭建机器人硬件，还需要搭建机器人软件及相应的软件运行环境。系统和软件版本并不是越新越好，够用就行了，大家切记。本项目推荐使用ubuntu18.04操作系统和ROS melodic版本，除此之外还涉及到众多第三方库环境，为了方便大家学习将其整理如下：
